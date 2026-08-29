@@ -21,7 +21,38 @@ export const HTML = `
       <div class="stat reveal"><b>9</b><small>Industries Served</small></div>
       <div class="stat reveal"><b>4.9★</b><small>Avg. Client Rating</small></div>
     </div>
-    <div class="portfolio-grid js-portfolio" data-tags></div>
+    <div class="portfolio-grid js-portfolio" data-tags>
+      <a class="project spotlight" data-cursor href="/work-ziptrip" style="--tint:linear-gradient(135deg, rgba(0,150,205,.48), rgba(6,24,66,.6)); cursor:pointer;">
+        <img class="project-img" src="/media/96a794cf673e.webp" alt="ZipTrip — AI-Powered Travel App" loading="lazy">
+        <div class="project-tint"></div>
+        <div class="project-body"><small>AI-Powered Travel App</small><h3>ZipTrip</h3><p>AI trip planning across flights, hotels, and cruises</p><div class="tags"><span>AI Travel</span><span>Mobile App</span><span>iOS &amp; Android</span></div></div>
+      </a>
+      <a class="project" data-cursor href="/work-crewiq" style="--tint:linear-gradient(135deg, rgba(245,166,35,.42), rgba(10,13,19,.6)); cursor:pointer;">
+        <img class="project-img" src="/media/f0b71b98daf7.webp" alt="CrewIQ — AI-Powered Workforce App" loading="lazy">
+        <div class="project-tint"></div>
+        <div class="project-body"><small>AI-Powered Workforce App</small><h3>CrewIQ</h3><p>AI job matching, verified clock-in, and transparent pay</p><div class="tags"><span>AI Matching</span><span>Workforce</span><span>iOS &amp; Android</span></div></div>
+      </a>
+      <a class="project" data-cursor href="/work-fovera" style="--tint:linear-gradient(135deg, rgba(245,166,35,.42), rgba(10,13,19,.6)); cursor:pointer;">
+        <img class="project-img" src="/media/c579cc61a782.webp" alt="Fovera — AI-Powered Food Compliance App" loading="lazy">
+        <div class="project-tint"></div>
+        <div class="project-body"><small>AI-Powered Food Compliance App</small><h3>Fovera</h3><p>AI-checked allergen data, recipe costing, and label approval in one app</p><div class="tags"><span>Food Compliance</span><span>AI Allergen Data</span><span>iOS &amp; Android</span></div></div>
+      </a>
+      <a class="project" data-cursor href="/work-unbroken-investing" style="--tint:linear-gradient(135deg, rgba(46,204,140,.42), rgba(6,12,10,.6)); cursor:pointer;">
+        <img class="project-img" src="/media/0f4b9b9f70de.webp" alt="Unbroken Investing — AI-Powered Investment Platform" loading="lazy">
+        <div class="project-tint"></div>
+        <div class="project-body"><small>AI-Powered Investment Platform</small><h3>Unbroken Investing</h3><p>AI-matched deal flow with real-time underwriting and risk analysis</p><div class="tags"><span>AI Investing</span><span>Real Estate</span><span>iOS &amp; Android</span></div></div>
+      </a>
+      <a class="project" data-cursor href="/work-youdj-mixer" style="--tint:linear-gradient(135deg, rgba(245,140,35,.42), rgba(13,10,10,.6)); cursor:pointer;">
+        <img class="project-img" src="/media/f77ed8529fad.webp" alt="YouDJ Mixer — DJ &amp; Music Mixing App" loading="lazy">
+        <div class="project-tint"></div>
+        <div class="project-body"><small>DJ &amp; Music Mixing App</small><h3>YouDJ Mixer</h3><p>A real dual-deck mixer anyone can pick up in minutes</p><div class="tags"><span>DJ App</span><span>Music</span><span>iOS &amp; Android</span></div></div>
+      </a>
+      <a class="project" data-cursor href="/work-joytify" style="--tint:linear-gradient(135deg, rgba(140,70,220,.42), rgba(10,10,16,.6)); cursor:pointer;">
+        <img class="project-img" src="/media/2e895bb72d74.webp" alt="Joytify — Music &amp; Playlists App" loading="lazy">
+        <div class="project-tint"></div>
+        <div class="project-body"><small>Music &amp; Playlists App</small><h3>Joytify</h3><p>320kbps streaming with synced lyrics and instant search</p><div class="tags"><span>Music Streaming</span><span>Playlists</span><span>iOS &amp; Android</span></div></div>
+      </a>
+    </div>
   </div>
 </section>
 

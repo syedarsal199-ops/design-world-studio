@@ -122,8 +122,24 @@ export const HTML = `
       <span class="kicker">Selected Work</span>
       <h2 class="section-title">Products we've turned into intelligent platforms.</h2>
     </div>
-    <div class="portfolio-grid js-portfolio" data-limit="3"></div>
-    <a class="section-cta-link" data-route="work" data-cursor>View all work →</a>
+    <div class="portfolio-grid js-portfolio" data-limit="3">
+      <a class="project spotlight" data-cursor href="/work-ziptrip" style="--tint:linear-gradient(135deg, rgba(0,150,205,.48), rgba(6,24,66,.6)); cursor:pointer;">
+        <img class="project-img" src="/media/96a794cf673e.webp" alt="ZipTrip — AI-Powered Travel App" loading="lazy">
+        <div class="project-tint"></div>
+        <div class="project-body"><small>AI-Powered Travel App</small><h3>ZipTrip</h3><p>AI trip planning across flights, hotels, and cruises</p></div>
+      </a>
+      <a class="project" data-cursor href="/work-crewiq" style="--tint:linear-gradient(135deg, rgba(245,166,35,.42), rgba(10,13,19,.6)); cursor:pointer;">
+        <img class="project-img" src="/media/f0b71b98daf7.webp" alt="CrewIQ — AI-Powered Workforce App" loading="lazy">
+        <div class="project-tint"></div>
+        <div class="project-body"><small>AI-Powered Workforce App</small><h3>CrewIQ</h3><p>AI job matching, verified clock-in, and transparent pay</p></div>
+      </a>
+      <a class="project" data-cursor href="/work-fovera" style="--tint:linear-gradient(135deg, rgba(245,166,35,.42), rgba(10,13,19,.6)); cursor:pointer;">
+        <img class="project-img" src="/media/c579cc61a782.webp" alt="Fovera — AI-Powered Food Compliance App" loading="lazy">
+        <div class="project-tint"></div>
+        <div class="project-body"><small>AI-Powered Food Compliance App</small><h3>Fovera</h3><p>AI-checked allergen data, recipe costing, and label approval in one app</p></div>
+      </a>
+    </div>
+    <a class="section-cta-link" href="/work" data-cursor>View all work →</a>
   </div>
 </section>
 
