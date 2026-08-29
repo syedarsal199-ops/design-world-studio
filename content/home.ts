@@ -122,7 +122,7 @@ export const HTML = `
       <span class="kicker">Selected Work</span>
       <h2 class="section-title">Products we've turned into intelligent platforms.</h2>
     </div>
-    <div class="portfolio-grid js-portfolio" data-limit="3">
+    <div class="portfolio-grid">
       <a class="project spotlight" data-cursor href="/work-ziptrip" style="--tint:linear-gradient(135deg, rgba(0,150,205,.48), rgba(6,24,66,.6)); cursor:pointer;">
         <img class="project-img" src="/media/96a794cf673e.webp" alt="ZipTrip — AI-Powered Travel App" loading="lazy">
         <div class="project-tint"></div>

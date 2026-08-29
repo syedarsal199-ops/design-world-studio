@@ -21,7 +21,7 @@ export const HTML = `
       <div class="stat reveal"><b>9</b><small>Industries Served</small></div>
       <div class="stat reveal"><b>4.9★</b><small>Avg. Client Rating</small></div>
     </div>
-    <div class="portfolio-grid js-portfolio" data-tags>
+    <div class="portfolio-grid">
       <a class="project spotlight" data-cursor href="/work-ziptrip" style="--tint:linear-gradient(135deg, rgba(0,150,205,.48), rgba(6,24,66,.6)); cursor:pointer;">
         <img class="project-img" src="/media/96a794cf673e.webp" alt="ZipTrip — AI-Powered Travel App" loading="lazy">
         <div class="project-tint"></div>
