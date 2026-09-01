@@ -1133,8 +1133,55 @@ window.__bootSite = function(){
   if (contactForm) {
     contactForm.addEventListener('submit', function(e){
       e.preventDefault();
-      document.getElementById('formFields').style.display = 'none';
-      document.getElementById('thankYou').style.display = 'flex';
+      var nameEl = contactForm.querySelector('[data-field="name"]');
+      var emailEl = contactForm.querySelector('[data-field="email"]');
+      var companyEl = contactForm.querySelector('[data-field="company"]');
+      var messageEl = contactForm.querySelector('[data-field="message"]');
+      var activeBudget = contactForm.querySelector('.budget-pill.active');
+      var submitBtn = contactForm.querySelector('button[type="submit"]');
+      var errBox = document.getElementById('contactFormError');
+      if (!errBox) {
+        errBox = document.createElement('p');
+        errBox.id = 'contactFormError';
+        errBox.style.cssText = 'color:#ff6b6b; font-size:13px; margin-top:14px; display:none;';
+        contactForm.querySelector('#formFields').appendChild(errBox);
+      }
+      errBox.style.display = 'none';
+
+      var payload = {
+        name: nameEl ? nameEl.value.trim() : '',
+        email: emailEl ? emailEl.value.trim() : '',
+        company: companyEl ? companyEl.value.trim() : '',
+        budget: activeBudget ? activeBudget.textContent.trim() : '',
+        message: messageEl ? messageEl.value.trim() : ''
+      };
+      if (!payload.name || !payload.email || !payload.message) {
+        errBox.textContent = 'Please fill in your name, email, and a short message.';
+        errBox.style.display = 'block';
+        return;
+      }
+
+      var originalBtnHtml = submitBtn ? submitBtn.innerHTML : '';
+      if (submitBtn) { submitBtn.disabled = true; submitBtn.innerHTML = '<span>Sending…</span>'; }
+
+      fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify(payload)
+      })
+        .then(function(res){ return res.json().then(function(data){ return { ok: res.ok, data: data }; }); })
+        .then(function(result){
+          if (!result.ok) throw new Error(result.data && result.data.error ? result.data.error : 'Something went wrong.');
+          document.getElementById('formFields').style.display = 'none';
+          document.getElementById('thankYou').style.display = 'flex';
+        })
+        .catch(function(err){
+          errBox.textContent = err.message || 'Something went wrong. Please try again.';
+          errBox.style.display = 'block';
+        })
+        .finally(function(){
+          if (submitBtn) { submitBtn.disabled = false; submitBtn.innerHTML = originalBtnHtml; }
+        });
     });
   }
 
@@ -1837,7 +1884,7 @@ window.__bootSite = function(){
       };
       try { sessionStorage.setItem('dws_prefill', JSON.stringify(prefill)); } catch(err){}
       if (window.__animateSubmitBtn) window.__animateSubmitBtn(submitBtn);
-      location.hash = 'contact';
+      window.dispatchEvent(new CustomEvent('site:navigate', { detail: { route: 'contact' } }));
       setTimeout(function(){
         try {
           var pre = JSON.parse(sessionStorage.getItem('dws_prefill') || '{}');
@@ -1854,7 +1901,7 @@ window.__bootSite = function(){
           }
           sessionStorage.removeItem('dws_prefill');
         } catch(err){}
-      }, 80);
+      }, 450);
     }
   });
 
