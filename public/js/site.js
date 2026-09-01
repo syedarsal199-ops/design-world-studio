@@ -1871,37 +1871,64 @@ window.__bootSite = function(){
     }
     var submitBtn = e.target.closest('.submit-cta-btn');
     if (submitBtn) {
+      if (submitBtn.disabled) return;
       var card = submitBtn.closest('.submit-cta-right');
       var nameEl = card ? card.querySelector('[data-field="name"]') : null;
       var emailEl = card ? card.querySelector('[data-field="email"]') : null;
       var briefEl = card ? card.querySelector('[data-field="brief"]') : null;
       var activePill = card ? card.querySelector('.submit-pill.active') : null;
-      var prefill = {
+      var noteEl = card ? card.querySelector('.submit-cta-note') : null;
+      var errBox = card ? card.querySelector('.submit-cta-error') : null;
+      if (card && !errBox) {
+        errBox = document.createElement('p');
+        errBox.className = 'submit-cta-error';
+        errBox.style.cssText = 'color:#ffdede; font-size:13px; margin-top:12px; display:none;';
+        card.appendChild(errBox);
+      }
+      if (errBox) errBox.style.display = 'none';
+
+      var payload = {
         name: nameEl ? nameEl.value.trim() : '',
         email: emailEl ? emailEl.value.trim() : '',
-        brief: briefEl ? briefEl.value.trim() : '',
+        message: briefEl ? briefEl.value.trim() : '',
         service: activePill ? activePill.getAttribute('data-service') : ''
       };
-      try { sessionStorage.setItem('dws_prefill', JSON.stringify(prefill)); } catch(err){}
-      if (window.__animateSubmitBtn) window.__animateSubmitBtn(submitBtn);
-      window.dispatchEvent(new CustomEvent('site:navigate', { detail: { route: 'contact' } }));
-      setTimeout(function(){
-        try {
-          var pre = JSON.parse(sessionStorage.getItem('dws_prefill') || '{}');
-          var form = document.getElementById('contactForm');
-          if (!form || (!pre.name && !pre.email && !pre.brief && !pre.service)) return;
-          var nEl = form.querySelector('[data-field="name"]');
-          var eEl = form.querySelector('[data-field="email"]');
-          var mEl = form.querySelector('[data-field="message"]');
-          if (nEl && pre.name) nEl.value = pre.name;
-          if (eEl && pre.email) eEl.value = pre.email;
-          if (mEl) {
-            var lead = pre.service ? ('Interested in: ' + pre.service + '. ') : '';
-            mEl.value = lead + (pre.brief || '');
+      if (!payload.name || !payload.email || !payload.message) {
+        if (errBox) {
+          errBox.textContent = 'Please fill in your name, email, and a brief note about your project.';
+          errBox.style.display = 'block';
+        }
+        return;
+      }
+
+      var originalHtml = submitBtn.innerHTML;
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = '<span>Sending…</span>';
+
+      fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify(payload)
+      })
+        .then(function(res){ return res.json().then(function(data){ return { ok: res.ok, data: data }; }); })
+        .then(function(result){
+          if (!result.ok) throw new Error(result.data && result.data.error ? result.data.error : 'Something went wrong.');
+          if (window.__animateSubmitBtn) window.__animateSubmitBtn(submitBtn);
+          submitBtn.innerHTML = '<span>Sent — thank you!</span>';
+          if (nameEl) nameEl.value = '';
+          if (emailEl) emailEl.value = '';
+          if (briefEl) briefEl.value = '';
+          if (noteEl) noteEl.textContent = "We'll be in touch within one business day.";
+          setTimeout(function(){ submitBtn.innerHTML = originalHtml; submitBtn.disabled = false; }, 4000);
+        })
+        .catch(function(err){
+          submitBtn.innerHTML = originalHtml;
+          submitBtn.disabled = false;
+          if (errBox) {
+            errBox.textContent = err.message || 'Something went wrong. Please try again.';
+            errBox.style.display = 'block';
           }
-          sessionStorage.removeItem('dws_prefill');
-        } catch(err){}
-      }, 450);
+        });
     }
   });
 
