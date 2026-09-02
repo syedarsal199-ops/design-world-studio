@@ -406,6 +406,16 @@ window.__bootSite = function(){
   }, { threshold: 0.2 });
   document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
 
+  /* Next.js swaps page content on client-side navigation without reloading
+     this script, so newly-rendered ".reveal" elements (new page's cards,
+     hero lines, etc.) would otherwise never get observed and stay invisible
+     until a hard refresh. Expose a rescan function SiteRuntime.tsx calls
+     after every route change. Re-observing an element that's already "in"
+     is harmless (IntersectionObserver just re-checks it). */
+  window.__reobserveReveals = function(){
+    document.querySelectorAll('.reveal:not(.in)').forEach(function(el){ io.observe(el); });
+  };
+
   /* ---------- services grids ---------- */
   var SERVICES = [
     ['01','Website Design & Development','Cinematic, high-performance websites engineered to convert — sub-second load times, pixel-level craft, and copy that sells while you sleep.', '#4EA83A','#4FD1FF', ['Next.js','CMS','SEO-Ready']],
