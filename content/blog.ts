@@ -15,7 +15,44 @@ export const HTML = `
 
 <section class="bg-alt">
   <div class="container">
-    <div class="blog-grid" id="blogGrid"></div>
+    <div class="blog-grid" id="blogGrid">
+      <a class="blog-card reveal" href="/blog-real-estate-mobile-app-2026">
+        <div class="blog-meta"><span class="blog-tag">Mobile App Development</span><span class="blog-date">September 2026 · 9 min read</span></div>
+        <h3>Real Estate Mobile App Development in 2026: The Complete Guide for US Agencies</h3>
+        <p>Must-have features, realistic costs, and how to choose a development partner &mdash; everything US real estate agencies need to know before building a mobile app in 2026.</p>
+        <span class="blog-read">Read article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+      </a>
+      <a class="blog-card reveal" href="/blog-ai-chatbot-roi">
+        <div class="blog-meta"><span class="blog-tag">AI Automation</span><span class="blog-date">August 2026 · 6 min read</span></div>
+        <h3>The Real ROI of AI Chatbots vs. Traditional Support</h3>
+        <p>&quot;Replace your support team with AI&quot; is a bad pitch. Here&rsquo;s the honest, narrower version &mdash; and where the real ROI actually comes from.</p>
+        <span class="blog-read">Read article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+      </a>
+      <a class="blog-card reveal" href="/blog-ai-native-development">
+        <div class="blog-meta"><span class="blog-tag">AI Development</span><span class="blog-date">August 2026 · 6 min read</span></div>
+        <h3>Why AI-Native Development Is Beating &quot;AI Bolted On&quot;</h3>
+        <p>Most teams are still adding AI as a feature after the fact. The products winning right now were architected around it from day one &mdash; here&rsquo;s what that looks like in practice.</p>
+        <span class="blog-read">Read article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+      </a>
+      <a class="blog-card reveal" href="/blog-mvp-to-scale-architecture">
+        <div class="blog-meta"><span class="blog-tag">Software Development</span><span class="blog-date">July 2026 · 6 min read</span></div>
+        <h3>From MVP to Scale: Architecting Your First Build for Growth</h3>
+        <p>The MVP that has to be rewritten at 10,000 users was scoped wrong from the start. A few architectural decisions that cost nothing early and save everything later.</p>
+        <span class="blog-read">Read article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+      </a>
+      <a class="blog-card reveal" href="/blog-seo-in-ai-search-era">
+        <div class="blog-meta"><span class="blog-tag">SEO</span><span class="blog-date">July 2026 · 5 min read</span></div>
+        <h3>SEO in the Age of AI Search: What Actually Still Works</h3>
+        <p>AI-generated answers and chat-based search now sit in front of a large share of searches. That changes what SEO should prioritize, not whether SEO still matters.</p>
+        <span class="blog-read">Read article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+      </a>
+      <a class="blog-card reveal" href="/blog-choosing-mobile-app-approach">
+        <div class="blog-meta"><span class="blog-tag">Mobile Development</span><span class="blog-date">July 2026 · 6 min read</span></div>
+        <h3>Native, Cross-Platform, or AI-Assisted: Choosing Your Mobile Stack</h3>
+        <p>There&rsquo;s no universally &quot;best&quot; mobile stack &mdash; only the right choice for a given team, timeline, and feature set. The framework we use when scoping a client&rsquo;s build.</p>
+        <span class="blog-read">Read article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+      </a>
+    </div>
   </div>
 </section>
 
