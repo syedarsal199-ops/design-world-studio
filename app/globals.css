@@ -3084,3 +3084,53 @@
     .dws-chat-panel{ width:calc(100vw - 28px); height:min(70vh, 560px); }
   }
   @media (prefers-reduced-motion: reduce){ .dws-chat-panel{ animation:none; } }
+
+/* ---------- Welcome lead popup (components/LeadPopup.tsx) ---------- */
+.dws-popup-overlay{
+  position:fixed; inset:0; z-index:9998; display:flex; align-items:center; justify-content:center;
+  background:rgba(3,3,4,.6); backdrop-filter:blur(6px); -webkit-backdrop-filter:blur(6px);
+  padding:20px; animation:dwsPopupFade .35s var(--ease);
+}
+@keyframes dwsPopupFade{ from{ opacity:0; } to{ opacity:1; } }
+.dws-popup-card{
+  position:relative; width:100%; max-width:420px; border-radius:22px; padding:32px 28px 26px;
+  animation:dwsPopupUp .4s var(--ease);
+}
+@keyframes dwsPopupUp{ from{ opacity:0; transform:translateY(18px) scale(.98); } to{ opacity:1; transform:none; } }
+.dws-popup-close{
+  position:absolute; top:14px; right:14px; width:32px; height:32px; border-radius:50%;
+  display:flex; align-items:center; justify-content:center; background:rgba(255,255,255,.06);
+  border:1px solid rgba(255,255,255,.1); color:rgba(244,242,237,.7); cursor:pointer; transition:background .25s;
+}
+.dws-popup-close:hover{ background:rgba(255,255,255,.14); }
+.dws-popup-card h3{ font-size:clamp(1.2rem,2.4vw,1.5rem); font-weight:600; margin:10px 0 8px; color:var(--bone); }
+.dws-popup-sub{ font-size:14px; line-height:1.6; color:rgba(244,242,237,.62); margin-bottom:20px; }
+.dws-popup-form{ display:flex; flex-direction:column; gap:12px; }
+.dws-popup-fields{ display:flex; flex-direction:column; gap:12px; }
+.dws-popup-form input,
+.dws-popup-form select,
+.dws-popup-form textarea{
+  width:100%; padding:12px 16px; border-radius:12px; border:1.5px solid rgba(255,255,255,.12);
+  background:rgba(255,255,255,.05); color:var(--bone); font-family:var(--font-inter),sans-serif; font-size:14px;
+  transition:background .3s, border-color .3s; resize:vertical;
+}
+.dws-popup-form input::placeholder,
+.dws-popup-form textarea::placeholder{ color:rgba(244,242,237,.4); }
+.dws-popup-form input:focus,
+.dws-popup-form select:focus,
+.dws-popup-form textarea:focus{ outline:none; border-color:var(--accent); background:rgba(255,255,255,.08); }
+.dws-popup-actions{ display:flex; align-items:center; justify-content:space-between; gap:12px; margin-top:6px; }
+.dws-popup-decline{
+  background:none; border:none; color:rgba(244,242,237,.5); font-size:13.5px; cursor:pointer;
+  text-decoration:underline; text-underline-offset:3px; transition:color .25s;
+}
+.dws-popup-decline:hover{ color:rgba(244,242,237,.8); }
+.dws-popup-error{ font-size:13px; color:#ff8a8a; }
+.dws-popup-success{ text-align:center; padding:20px 0 8px; }
+.dws-popup-success h3{ margin-top:0; }
+.dws-popup-success p{ color:rgba(244,242,237,.62); font-size:14px; }
+@media(max-width:480px){
+  .dws-popup-card{ padding:26px 20px 20px; }
+  .dws-popup-actions{ flex-direction:column-reverse; align-items:stretch; }
+  .dws-popup-actions .btn{ width:100%; }
+}

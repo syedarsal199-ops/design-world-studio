@@ -5,6 +5,7 @@ import './globals.css';
 import SiteChrome from '@/components/SiteChrome';
 import SiteRuntime from '@/components/SiteRuntime';
 import ChatWidget from '@/components/ChatWidget';
+import LeadPopup from '@/components/LeadPopup';
 
 const GA_MEASUREMENT_ID = 'G-JPH9SVSJPS';
 
@@ -103,6 +104,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <SiteChrome>{children}</SiteChrome>
         <SiteRuntime />
         <ChatWidget />
+        <LeadPopup />
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
           strategy="afterInteractive"
