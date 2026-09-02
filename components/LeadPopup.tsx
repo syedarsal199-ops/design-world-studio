@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react';
 
 const STORAGE_KEY = 'dws_lead_popup_shown';
 const DELAY_MS = 3000;
+const SERVICES = ['Web Development', 'Mobile App Development', 'AI Automation', 'Software Development', 'Something else'];
 
 export default function LeadPopup() {
   const [open, setOpen] = useState(false);
@@ -111,18 +112,19 @@ export default function LeadPopup() {
                   disabled={status === 'sending'}
                 />
               </div>
-              <select
-                value={service}
-                onChange={(e) => setService(e.target.value)}
-                disabled={status === 'sending'}
-                aria-label="Service you're interested in"
-              >
-                <option>Web Development</option>
-                <option>Mobile App Development</option>
-                <option>AI Automation</option>
-                <option>Software Development</option>
-                <option>Something else</option>
-              </select>
+              <div className="dws-popup-pills" role="group" aria-label="Service you're interested in">
+                {SERVICES.map((s) => (
+                  <button
+                    key={s}
+                    type="button"
+                    className={`dws-popup-pill${service === s ? ' active' : ''}`}
+                    onClick={() => setService(s)}
+                    disabled={status === 'sending'}
+                  >
+                    {s}
+                  </button>
+                ))}
+              </div>
               <textarea
                 placeholder="Tell us briefly what you need (optional)"
                 value={message}

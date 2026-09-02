@@ -3134,3 +3134,12 @@
   .dws-popup-actions{ flex-direction:column-reverse; align-items:stretch; }
   .dws-popup-actions .btn{ width:100%; }
 }
+.dws-popup-pills{ display:flex; flex-wrap:wrap; gap:8px; }
+.dws-popup-pill{
+  border-radius:999px; border:1.5px solid rgba(255,255,255,.14); padding:8px 14px;
+  font-family:var(--font-space-grotesk),sans-serif; font-size:12.5px; font-weight:600;
+  color:rgba(244,242,237,.72); background:rgba(255,255,255,.05); cursor:pointer;
+  transition:background .25s, color .25s, border-color .25s;
+}
+.dws-popup-pill:hover{ background:rgba(255,255,255,.1); }
+.dws-popup-pill.active{ background:var(--accent); border-color:var(--accent); color:#06170a; }
