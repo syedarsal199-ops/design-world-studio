@@ -112,19 +112,16 @@ export default function LeadPopup() {
                   disabled={status === 'sending'}
                 />
               </div>
-              <div className="dws-popup-pills" role="group" aria-label="Service you're interested in">
+              <select
+                value={service}
+                onChange={(e) => setService(e.target.value)}
+                disabled={status === 'sending'}
+                aria-label="Service you're interested in"
+              >
                 {SERVICES.map((s) => (
-                  <button
-                    key={s}
-                    type="button"
-                    className={`dws-popup-pill${service === s ? ' active' : ''}`}
-                    onClick={() => setService(s)}
-                    disabled={status === 'sending'}
-                  >
-                    {s}
-                  </button>
+                  <option key={s} value={s}>{s}</option>
                 ))}
-              </div>
+              </select>
               <textarea
                 placeholder="Tell us briefly what you need (optional)"
                 value={message}

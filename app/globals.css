@@ -3143,3 +3143,12 @@
 }
 .dws-popup-pill:hover{ background:rgba(255,255,255,.1); }
 .dws-popup-pill.active{ background:var(--accent); border-color:var(--accent); color:#06170a; }
+.dws-popup-form select{
+  appearance:none; -webkit-appearance:none;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23F4F2ED' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'/></svg>");
+  background-repeat:no-repeat; background-position:right 14px center; background-size:16px;
+  padding-right:40px; cursor:pointer;
+}
+.dws-popup-form select option{
+  background:#12140f; color:var(--bone);
+}
