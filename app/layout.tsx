@@ -1,9 +1,12 @@
 import type { Metadata } from 'next';
 import { Space_Grotesk, Inter } from 'next/font/google';
+import Script from 'next/script';
 import './globals.css';
 import SiteChrome from '@/components/SiteChrome';
 import SiteRuntime from '@/components/SiteRuntime';
 import ChatWidget from '@/components/ChatWidget';
+
+const GA_MEASUREMENT_ID = 'G-JPH9SVSJPS';
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ['latin'],
@@ -100,6 +103,18 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <SiteChrome>{children}</SiteChrome>
         <SiteRuntime />
         <ChatWidget />
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="ga4-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_MEASUREMENT_ID}');
+          `}
+        </Script>
       </body>
     </html>
   );
