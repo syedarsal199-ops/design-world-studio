@@ -1008,7 +1008,8 @@
     background:radial-gradient(circle, rgba(255,255,255,.3), transparent 70%); pointer-events:none;
   }
   .testi-video-head{ position:relative; z-index:1; display:flex; align-items:flex-start; justify-content:space-between; gap:16px; }
-  .article-body h3{ margin-top:32px; font-size:clamp(1.1rem,1.9vw,1.35rem); font-weight:500; color:rgba(244,242,237,.92); }ight:700; color:#0a1c0c; line-height:1.2; max-width:260px; }
+  .article-body h3{ margin-top:32px; font-size:clamp(1.1rem,1.9vw,1.35rem); font-weight:500; color:rgba(244,242,237,.92); }
+  .testi-video-head h3{ font-family:var(--font-space-grotesk),sans-serif; font-size:clamp(1.25rem,2.1vw,1.6rem); font-weight:700; color:#0a1c0c; line-height:1.2; max-width:260px; }
   .testi-video-nav{ display:flex; gap:10px; flex-shrink:0; }
   .testi-video-nav button{ width:38px; height:38px; border-radius:999px; border:1px solid rgba(10,28,12,.25); background:rgba(255,255,255,.22); color:#0a1c0c; display:flex; align-items:center; justify-content:center; cursor:pointer; transition:background .3s; }
   .testi-video-nav button:hover{ background:rgba(255,255,255,.4); }
