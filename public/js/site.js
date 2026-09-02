@@ -416,6 +416,27 @@ window.__bootSite = function(){
     document.querySelectorAll('.reveal:not(.in)').forEach(function(el){ io.observe(el); });
   };
 
+  /* Chrome (and other browsers) can drop or fail to properly repaint the
+     GPU-composited layers this page creates (the 3D tilt transforms, the
+     network canvases, background images) once a tab has sat in the
+     background for a while — switching to another tab and back can leave
+     sections looking blank/black until something forces a repaint, which
+     is exactly why a manual refresh "fixes" it. Force that repaint
+     ourselves the moment the tab becomes visible again, instead of making
+     the visitor refresh. */
+  document.addEventListener('visibilitychange', function(){
+    if (document.hidden) return;
+    requestAnimationFrame(function(){
+      window.dispatchEvent(new Event('resize'));
+      if (typeof window.__reobserveReveals === 'function') window.__reobserveReveals();
+      var b = document.body;
+      var prev = b.style.transform;
+      b.style.transform = 'translateZ(0)';
+      void b.offsetHeight; // force the browser to actually reflow/repaint
+      b.style.transform = prev;
+    });
+  });
+
   /* ---------- services grids ---------- */
   var SERVICES = [
     ['01','Website Design & Development','Cinematic, high-performance websites engineered to convert — sub-second load times, pixel-level craft, and copy that sells while you sleep.', '#4EA83A','#4FD1FF', ['Next.js','CMS','SEO-Ready']],
