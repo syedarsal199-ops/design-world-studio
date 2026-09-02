@@ -821,12 +821,32 @@ window.__bootSite = function(){
 
     function clamp(n, lo, hi){ return Math.max(lo, Math.min(hi, n)); }
 
-    if (!reducedMotion) {
+    /* Performance: this decorative loop was running unconditionally at
+       60fps on every page, computing layout (getBoundingClientRect) for
+       every matched element sitewide every single frame — including ones
+       nowhere near the screen. That's exactly the kind of work that causes
+       scroll lag/hangs, and is worst on phones. Fixes:
+       (1) skip entirely on touch/coarse-pointer devices (phones/tablets),
+           where this subtle tilt effect isn't worth the battery/CPU cost;
+       (2) on desktop, only touch elements currently within (or just
+           outside) the viewport, and run at ~30fps instead of 60fps —
+           visually indistinguishable for a slow parallax effect, half the
+           work. */
+    var isCoarsePointer = window.matchMedia('(pointer: coarse)').matches;
+    if (!reducedMotion && !isCoarsePointer) {
+      var cineFrameSkip = false;
+      var cineMargin = 400; // px outside the viewport still counted as "active"
       (function cineLoop(){
+        cineFrameSkip = !cineFrameSkip;
+        if (cineFrameSkip) { requestAnimationFrame(cineLoop); return; }
+
         var vh = window.innerHeight;
+        var lo = -cineMargin, hi = vh + cineMargin;
+        var inRange = function(r){ return r.bottom >= lo && r.top <= hi; };
 
         cineCards.forEach(function(el, i){
           var r = el.getBoundingClientRect();
+          if (!inRange(r)) return;
           var cy = r.top + r.height / 2;
           var dist = clamp((cy - vh / 2) / (vh / 2), -1, 1);
           var wobble = Math.sin((i % 5) * 1.7) * 0.08;
@@ -854,6 +874,7 @@ window.__bootSite = function(){
 
         cineBlocks.forEach(function(el){
           var r = el.getBoundingClientRect();
+          if (!inRange(r)) return;
           var cy = r.top + r.height / 2;
           var dist = clamp((cy - vh / 2) / (vh / 2), -1, 1);
           var rotX = dist * -5;
@@ -863,6 +884,7 @@ window.__bootSite = function(){
 
         parallaxLayers.forEach(function(el, i){
           var r = el.getBoundingClientRect();
+          if (!inRange(r)) return;
           var speed = i % 2 === 0 ? 0.06 : 0.1;
           var shift = clamp(r.top * speed, -30, 30);
           el.style.transform = 'translateY(' + shift.toFixed(1) + 'px)';
@@ -870,6 +892,7 @@ window.__bootSite = function(){
 
         ctaGlowEls.forEach(function(el){
           var r2 = el.getBoundingClientRect();
+          if (!inRange(r2)) return;
           var cy2 = r2.top + r2.height / 2;
           var proximity = 1 - clamp(Math.abs(cy2 - vh / 2) / vh, 0, 1);
           el.style.setProperty('--glow-scale', (0.85 + proximity * 0.5).toFixed(3));
