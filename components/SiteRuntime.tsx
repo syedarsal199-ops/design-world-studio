@@ -19,12 +19,19 @@ export default function SiteRuntime() {
   }, [router]);
 
   // Client-side navigation swaps the page content without re-running
-  // site.js, so ".reveal" cards/sections on the new page never get
-  // observed by the scroll-reveal animation and stay invisible until a
-  // hard refresh. Re-scan for them every time the route changes.
+  // site.js. That script builds several sections purely in JavaScript the
+  // very first time it runs (the Services grid, and any remaining
+  // JS-driven portfolio grids) and never revisits them again — so any page
+  // you reach by clicking around, rather than a hard refresh, can show an
+  // empty section until you refresh. Re-run those builders (they're
+  // written to be safe to call repeatedly) and re-scan for newly-added
+  // ".reveal" elements every time the route changes.
   useEffect(() => {
     const w = window as any;
     const timer = setTimeout(() => {
+      if (typeof w.__populateServiceGrids === 'function') w.__populateServiceGrids();
+      if (typeof w.__populatePortfolioGrids === 'function') w.__populatePortfolioGrids();
+      if (typeof w.__revealDynamicCards === 'function') w.__revealDynamicCards();
       if (typeof w.__reobserveReveals === 'function') w.__reobserveReveals();
     }, 50);
     return () => clearTimeout(timer);

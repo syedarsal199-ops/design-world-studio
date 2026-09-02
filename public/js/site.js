@@ -453,7 +453,8 @@ window.__bootSite = function(){
     'Cross-Platform Development': 'cross-platform-development',
     'AI Solutions': 'ai-solutions'
   };
-  document.querySelectorAll('.js-services').forEach(function(grid){
+  function __populateServiceGrids(){
+  document.querySelectorAll('.js-services:empty').forEach(function(grid){
     var limit = grid.hasAttribute('data-limit') ? parseInt(grid.getAttribute('data-limit'), 10) : SERVICES.length;
     var cards = [];
     SERVICES.slice(0, limit).forEach(function(s, i){
@@ -487,6 +488,9 @@ window.__bootSite = function(){
       grid.addEventListener('mouseleave', function(){ spotlightTimer = setInterval(rotateSpotlight, 2800); }, true);
     }
   });
+  }
+  __populateServiceGrids();
+  window.__populateServiceGrids = __populateServiceGrids;
 
   /* ---------- portfolio grids ---------- */
   var PROJECTS = [
@@ -749,7 +753,8 @@ window.__bootSite = function(){
   })();
   }
 
-  document.querySelectorAll('.js-portfolio').forEach(function(grid){
+  function __populatePortfolioGrids(){
+  document.querySelectorAll('.js-portfolio:empty').forEach(function(grid){
     var limit = grid.hasAttribute('data-limit') ? parseInt(grid.getAttribute('data-limit'), 10) : PROJECTS.length;
     var showTags = grid.hasAttribute('data-tags');
     var cards = [];
@@ -771,6 +776,9 @@ window.__bootSite = function(){
       grid.addEventListener('mouseleave', function(){ spotlightTimer = setInterval(rotateSpotlight, 3200); }, true);
     }
   });
+  }
+  __populatePortfolioGrids();
+  window.__populatePortfolioGrids = __populatePortfolioGrids;
 
   /* ==========================================================
      Sitewide cinematic extras: staggered card reveals and the
@@ -780,11 +788,15 @@ window.__bootSite = function(){
      ========================================================== */
   (function(){
     /* ---- staggered reveal for services/portfolio grids on every page ---- */
-    document.querySelectorAll('.js-services .service-card, .js-portfolio .project').forEach(function(card, i){
-      card.classList.add('reveal');
-      card.style.transitionDelay = Math.min(i * 0.07, 0.42) + 's';
-      io.observe(card);
-    });
+    function __revealDynamicCards(){
+      document.querySelectorAll('.js-services .service-card:not(.reveal), .js-portfolio .project:not(.reveal)').forEach(function(card, i){
+        card.classList.add('reveal');
+        card.style.transitionDelay = Math.min(i * 0.07, 0.42) + 's';
+        io.observe(card);
+      });
+    }
+    __revealDynamicCards();
+    window.__revealDynamicCards = __revealDynamicCards;
 
     /* ---- continuous 3D scroll-cinema ----
        Runs every frame (not just on scroll events) so cards, headings and
