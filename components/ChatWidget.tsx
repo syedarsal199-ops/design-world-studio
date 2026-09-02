@@ -10,6 +10,9 @@ const GREETING: ChatMessage = {
     "Hi, I'm the Design World Studio assistant. Ask me about our services, timelines, or how to start a project.",
 };
 
+const AUTO_OPEN_STORAGE_KEY = 'dws_chat_auto_opened';
+const AUTO_OPEN_DELAY_MS = 1500;
+
 export default function ChatWidget() {
   const [open, setOpen] = useState(false);
   const [messages, setMessages] = useState<ChatMessage[]>([GREETING]);
@@ -23,6 +26,29 @@ export default function ChatWidget() {
       listRef.current.scrollTop = listRef.current.scrollHeight;
     }
   }, [messages, loading, open]);
+
+  // Greet visitors automatically, once per browser session, shortly after
+  // the site loads — rather than waiting for them to click the bubble.
+  useEffect(() => {
+    let alreadyOpened = false;
+    try {
+      alreadyOpened = sessionStorage.getItem(AUTO_OPEN_STORAGE_KEY) === '1';
+    } catch {
+      alreadyOpened = true;
+    }
+    if (alreadyOpened) return;
+
+    const timer = setTimeout(() => {
+      setOpen(true);
+      try {
+        sessionStorage.setItem(AUTO_OPEN_STORAGE_KEY, '1');
+      } catch {
+        // ignore
+      }
+    }, AUTO_OPEN_DELAY_MS);
+
+    return () => clearTimeout(timer);
+  }, []);
 
   async function sendMessage(e?: React.FormEvent) {
     e?.preventDefault();
