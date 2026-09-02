@@ -16,6 +16,12 @@ export const HTML = `
 <section class="bg-alt">
   <div class="container">
     <div class="blog-grid" id="blogGrid">
+      <a class="blog-card reveal" href="/blog-real-estate-website-development-2026">
+        <div class="blog-meta"><span class="blog-tag">Website Development</span><span class="blog-date">September 2026 · 8 min read</span></div>
+        <h3>Real Estate Website Development in 2026: The Complete Guide for US Brokerages</h3>
+        <p>Must-have features, realistic costs, common mistakes, and how to choose a development partner &mdash; everything US real estate brokerages need to know before building or redesigning a website in 2026.</p>
+        <span class="blog-read">Read article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+      </a>
       <a class="blog-card reveal" href="/blog-real-estate-mobile-app-2026">
         <div class="blog-meta"><span class="blog-tag">Mobile App Development</span><span class="blog-date">September 2026 · 9 min read</span></div>
         <h3>Real Estate Mobile App Development in 2026: The Complete Guide for US Agencies</h3>
