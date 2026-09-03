@@ -3,7 +3,7 @@ export const HTML = `
   <div class="grid-overlay"></div>
   <canvas class="page-hero-canvas" data-network></canvas>
   <div class="container page-hero-inner">
-    <div class="breadcrumb"><a data-route="home">Home</a><span>/</span><a data-route="services">Services</a><span>/</span><span>AI Agent</span></div>
+    <div class="breadcrumb"><a href="/" data-route="home">Home</a><span>/</span><a href="/services" data-route="services">Services</a><span>/</span><span>AI Agent</span></div>
     <div class="aix-hero-grid">
       <div class="aix-hero-copy">
         <span class="kicker">AI Agent</span>
@@ -179,8 +179,8 @@ status: <i>awaiting human approval</i></div></div></div>
       </div>
     </div>
     <div class="related-row reveal" style="justify-content:center; margin-top:36px">
-      <a class="related-pill" data-route="ai-chatbot" data-cursor>See Smart Chatbot Development &rarr;</a>
-      <a class="related-pill" data-route="ai-automation" data-cursor>See AI Automation &rarr;</a>
+      <a href="/ai-chatbot" class="related-pill" data-route="ai-chatbot" data-cursor>See Smart Chatbot Development &rarr;</a>
+      <a href="/ai-automation" class="related-pill" data-route="ai-automation" data-cursor>See AI Automation &rarr;</a>
     </div>
   </div>
 </section>
@@ -245,9 +245,9 @@ status: <i>awaiting human approval</i></div></div></div>
 <section>
   <div class="container">
     <div class="related-row reveal">
-      <a class="related-pill" data-route="ai-automation" data-cursor>AI Automation &rarr;</a>
-      <a class="related-pill" data-route="ai-chatbot" data-cursor>Smart Chatbot Development &rarr;</a>
-      <a class="related-pill" data-route="services" data-cursor>View all services &rarr;</a>
+      <a href="/ai-automation" class="related-pill" data-route="ai-automation" data-cursor>AI Automation &rarr;</a>
+      <a href="/ai-chatbot" class="related-pill" data-route="ai-chatbot" data-cursor>Smart Chatbot Development &rarr;</a>
+      <a href="/services" class="related-pill" data-route="services" data-cursor>View all services &rarr;</a>
     </div>
   </div>
 </section>

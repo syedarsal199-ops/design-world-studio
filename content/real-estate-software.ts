@@ -4,7 +4,7 @@ export const HTML = `
   <div class="grid-overlay"></div>
   <canvas class="page-hero-canvas" data-network></canvas>
   <div class="container page-hero-inner">
-    <div class="breadcrumb"><a data-route="home">Home</a><span>/</span><a data-route="services">Services</a><span>/</span><span>Real Estate Software</span></div>
+    <div class="breadcrumb"><a href="/" data-route="home">Home</a><span>/</span><a href="/services" data-route="services">Services</a><span>/</span><span>Real Estate Software</span></div>
     <div class="res-hero-grid">
       <div class="res-hero-copy">
         <span class="kicker">Real Estate · Custom Software</span>
@@ -364,9 +364,9 @@ export const HTML = `
       </div>
     </div>
     <div class="related-row reveal" style="margin-top:64px;">
-      <a class="related-pill" data-route="ai-solutions" data-cursor>AI Solutions →</a>
-      <a class="related-pill" data-route="software-development" data-cursor>Software Development →</a>
-      <a class="related-pill" data-route="services" data-cursor>View all services →</a>
+      <a href="/ai-solutions" class="related-pill" data-route="ai-solutions" data-cursor>AI Solutions →</a>
+      <a href="/software-development" class="related-pill" data-route="software-development" data-cursor>Software Development →</a>
+      <a href="/services" class="related-pill" data-route="services" data-cursor>View all services →</a>
     </div>
   </div>
 </section>

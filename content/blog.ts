@@ -3,7 +3,7 @@ export const HTML = `
   <div class="grid-overlay"></div>
   <canvas class="page-hero-canvas" data-network></canvas>
   <div class="container page-hero-inner">
-    <div class="breadcrumb"><a data-route="home">Home</a><span>/</span><span>Blog</span></div>
+    <div class="breadcrumb"><a href="/" data-route="home">Home</a><span>/</span><span>Blog</span></div>
     <span class="kicker">Notes From the Studio</span>
     <h1 class="page-title">
       <span class="reveal-line"><span>Thinking on AI,</span></span>

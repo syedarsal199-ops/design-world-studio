@@ -3,7 +3,7 @@ export const HTML = `
   <div class="grid-overlay"></div>
   <canvas class="page-hero-canvas" data-network></canvas>
   <div class="container page-hero-inner">
-    <div class="breadcrumb"><a data-route="home">Home</a><span>/</span><a data-route="services">Services</a><span>/</span><span>Software Development</span></div>
+    <div class="breadcrumb"><a href="/" data-route="home">Home</a><span>/</span><a href="/services" data-route="services">Services</a><span>/</span><span>Software Development</span></div>
     <div class="aix-hero-grid">
       <div class="aix-hero-copy">
         <span class="kicker">Software Development</span>
@@ -146,9 +146,9 @@ export const HTML = `
 <section>
   <div class="container">
     <div class="related-row reveal">
-      <a class="related-pill" data-route="ai-powered-software-development" data-cursor>AI-Powered Software &rarr;</a>
-      <a class="related-pill" data-route="web-app-development" data-cursor>Web App Development &rarr;</a>
-      <a class="related-pill" data-route="services" data-cursor>View all services &rarr;</a>
+      <a href="/ai-powered-software-development" class="related-pill" data-route="ai-powered-software-development" data-cursor>AI-Powered Software &rarr;</a>
+      <a href="/web-app-development" class="related-pill" data-route="web-app-development" data-cursor>Web App Development &rarr;</a>
+      <a href="/services" class="related-pill" data-route="services" data-cursor>View all services &rarr;</a>
     </div>
   </div>
 </section>

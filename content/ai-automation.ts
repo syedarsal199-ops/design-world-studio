@@ -3,7 +3,7 @@ export const HTML = `
   <div class="grid-overlay"></div>
   <canvas class="page-hero-canvas" data-network></canvas>
   <div class="container page-hero-inner">
-    <div class="breadcrumb"><a data-route="home">Home</a><span>/</span><a data-route="services">Services</a><span>/</span><span>AI Automation</span></div>
+    <div class="breadcrumb"><a href="/" data-route="home">Home</a><span>/</span><a href="/services" data-route="services">Services</a><span>/</span><span>AI Automation</span></div>
     <div class="aix-hero-grid">
       <div class="aix-hero-copy">
         <span class="kicker">AI Automation</span>
@@ -202,7 +202,7 @@ export const HTML = `
   <div class="aix-marquee"><div class="aix-marquee-track"><span class="aix-chip-tool"><i class=""></i>Salesforce</span><span class="aix-chip-tool"><i class="cy"></i>HubSpot</span><span class="aix-chip-tool"><i class=""></i>Pipedrive</span><span class="aix-chip-tool"><i class="gd"></i>Zoho</span><span class="aix-chip-tool"><i class=""></i>Microsoft Dynamics</span><span class="aix-chip-tool"><i class="cy"></i>Airtable</span><span class="aix-chip-tool"><i class=""></i>Notion</span><span class="aix-chip-tool"><i class="gd"></i>Monday.com</span><span class="aix-chip-tool"><i class=""></i>Salesforce</span><span class="aix-chip-tool"><i class="cy"></i>HubSpot</span><span class="aix-chip-tool"><i class=""></i>Pipedrive</span><span class="aix-chip-tool"><i class="gd"></i>Zoho</span><span class="aix-chip-tool"><i class=""></i>Microsoft Dynamics</span><span class="aix-chip-tool"><i class="cy"></i>Airtable</span><span class="aix-chip-tool"><i class=""></i>Notion</span><span class="aix-chip-tool"><i class="gd"></i>Monday.com</span></div></div><div class="aix-marquee"><div class="aix-marquee-track"><span class="aix-chip-tool"><i class="cy"></i>Slack</span><span class="aix-chip-tool"><i class=""></i>Microsoft Teams</span><span class="aix-chip-tool"><i class="gd"></i>Gmail</span><span class="aix-chip-tool"><i class=""></i>Outlook</span><span class="aix-chip-tool"><i class="cy"></i>Zendesk</span><span class="aix-chip-tool"><i class=""></i>Intercom</span><span class="aix-chip-tool"><i class="gd"></i>Freshdesk</span><span class="aix-chip-tool"><i class=""></i>Front</span><span class="aix-chip-tool"><i class="cy"></i>Slack</span><span class="aix-chip-tool"><i class=""></i>Microsoft Teams</span><span class="aix-chip-tool"><i class="gd"></i>Gmail</span><span class="aix-chip-tool"><i class=""></i>Outlook</span><span class="aix-chip-tool"><i class="cy"></i>Zendesk</span><span class="aix-chip-tool"><i class=""></i>Intercom</span><span class="aix-chip-tool"><i class="gd"></i>Freshdesk</span><span class="aix-chip-tool"><i class=""></i>Front</span></div></div><div class="aix-marquee"><div class="aix-marquee-track"><span class="aix-chip-tool"><i class="gd"></i>Stripe</span><span class="aix-chip-tool"><i class=""></i>QuickBooks</span><span class="aix-chip-tool"><i class="cy"></i>Xero</span><span class="aix-chip-tool"><i class=""></i>NetSuite</span><span class="aix-chip-tool"><i class="gd"></i>SAP</span><span class="aix-chip-tool"><i class=""></i>Shopify</span><span class="aix-chip-tool"><i class="cy"></i>WooCommerce</span><span class="aix-chip-tool"><i class=""></i>Snowflake</span><span class="aix-chip-tool"><i class="gd"></i>Stripe</span><span class="aix-chip-tool"><i class=""></i>QuickBooks</span><span class="aix-chip-tool"><i class="cy"></i>Xero</span><span class="aix-chip-tool"><i class=""></i>NetSuite</span><span class="aix-chip-tool"><i class="gd"></i>SAP</span><span class="aix-chip-tool"><i class=""></i>Shopify</span><span class="aix-chip-tool"><i class="cy"></i>WooCommerce</span><span class="aix-chip-tool"><i class=""></i>Snowflake</span></div></div>
   <div class="container" style="margin-top:44px">
     <div class="related-row reveal" style="justify-content:center">
-      <a class="related-pill" data-route="ai-agent" data-cursor>Need decisions, not just steps? See AI Agents &rarr;</a>
+      <a href="/ai-agent" class="related-pill" data-route="ai-agent" data-cursor>Need decisions, not just steps? See AI Agents &rarr;</a>
     </div>
   </div>
 </section>
@@ -215,9 +215,9 @@ export const HTML = `
 <section>
   <div class="container">
     <div class="related-row reveal">
-      <a class="related-pill" data-route="ai-chatbot" data-cursor>Smart Chatbot Development &rarr;</a>
-      <a class="related-pill" data-route="ai-agent" data-cursor>AI Agent &rarr;</a>
-      <a class="related-pill" data-route="services" data-cursor>View all services &rarr;</a>
+      <a href="/ai-chatbot" class="related-pill" data-route="ai-chatbot" data-cursor>Smart Chatbot Development &rarr;</a>
+      <a href="/ai-agent" class="related-pill" data-route="ai-agent" data-cursor>AI Agent &rarr;</a>
+      <a href="/services" class="related-pill" data-route="services" data-cursor>View all services &rarr;</a>
     </div>
   </div>
 </section>

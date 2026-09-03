@@ -3,7 +3,7 @@ export const HTML = `
   <div class="grid-overlay"></div>
   <canvas class="page-hero-canvas" data-network></canvas>
   <div class="container page-hero-inner">
-    <div class="breadcrumb"><a data-route="home">Home</a><span>/</span><a data-route="services">Services</a><span>/</span><span>Smart Chatbot Development</span></div>
+    <div class="breadcrumb"><a href="/" data-route="home">Home</a><span>/</span><a href="/services" data-route="services">Services</a><span>/</span><span>Smart Chatbot Development</span></div>
     <div class="chatbot-hero-grid">
       <div class="chatbot-hero-copy">
         <span class="kicker">AI Solutions · Smart Chatbots</span>
@@ -14,7 +14,7 @@ export const HTML = `
         <p class="page-sub">Design and develop intelligent chatbots that understand your customers, automate conversations, streamline support, and help your business operate smarter.</p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="#chatbotSubmit" data-scroll-to="chatbotSubmit" data-cursor><span>Submit a Project →</span></a>
-          <a class="btn btn-outline" data-route="ai-solutions" data-cursor><span>Explore AI Solutions</span></a>
+          <a href="/ai-solutions" class="btn btn-outline" data-route="ai-solutions" data-cursor><span>Explore AI Solutions</span></a>
         </div>
       </div>
       <div class="chatbot-hero-visual reveal">
@@ -146,9 +146,9 @@ export const HTML = `
       </div>
     </div>
     <div class="related-row reveal" style="margin-top:64px;">
-      <a class="related-pill" data-route="ai-automation" data-cursor>AI Automation →</a>
-      <a class="related-pill" data-route="ai-agent" data-cursor>AI Agent →</a>
-      <a class="related-pill" data-route="services" data-cursor>View all services →</a>
+      <a href="/ai-automation" class="related-pill" data-route="ai-automation" data-cursor>AI Automation →</a>
+      <a href="/ai-agent" class="related-pill" data-route="ai-agent" data-cursor>AI Agent →</a>
+      <a href="/services" class="related-pill" data-route="services" data-cursor>View all services →</a>
     </div>
   </div>
 </section>

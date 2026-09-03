@@ -3,7 +3,7 @@ export const HTML = `
   <div class="grid-overlay"></div>
   <canvas class="page-hero-canvas" data-network></canvas>
   <div class="container page-hero-inner">
-    <div class="breadcrumb"><a data-route="home">Home</a><span>/</span><span>Services</span></div>
+    <div class="breadcrumb"><a href="/" data-route="home">Home</a><span>/</span><span>Services</span></div>
     <span class="kicker">What We Do</span>
     <h1 class="page-title">
       <span class="reveal-line"><span>Sixteen disciplines.</span></span>
@@ -51,7 +51,7 @@ export const HTML = `
       </div>
     </div>
     <div class="related-row reveal" style="margin-top:64px;">
-      <a class="related-pill" data-route="ai-solutions" data-cursor>AI Solutions →</a><a class="related-pill" data-route="work" data-cursor>See Our Work →</a><a class="related-pill" data-route="contact" data-cursor>Start a Project →</a>
+      <a href="/ai-solutions" class="related-pill" data-route="ai-solutions" data-cursor>AI Solutions →</a><a href="/work" class="related-pill" data-route="work" data-cursor>See Our Work →</a><a href="/contact" class="related-pill" data-route="contact" data-cursor>Start a Project →</a>
     </div>
   </div>
 </section>

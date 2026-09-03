@@ -2,7 +2,7 @@ export const HTML = `
 <section class="page-hero" style="padding-bottom:48px;">
   <div class="grid-overlay"></div>
   <div class="container page-hero-inner">
-    <div class="breadcrumb"><a data-route="home">Home</a><span>/</span><a data-route="blog">Blog</a><span>/</span><span>Write a Post</span></div>
+    <div class="breadcrumb"><a href="/" data-route="home">Home</a><span>/</span><a href="/blog" data-route="blog">Blog</a><span>/</span><span>Write a Post</span></div>
     <span class="kicker">Studio Admin</span>
     <h1 class="page-title">
       <span class="reveal-line"><span>Write today's</span></span>

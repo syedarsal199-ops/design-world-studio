@@ -10,8 +10,8 @@ export const HTML = `
     </h1>
     <p class="hero-sub">We design, develop, automate, and scale intelligent digital products for ambitious businesses.</p>
     <div class="hero-actions">
-      <a class="btn btn-primary" data-route="contact" data-cursor><span>Start a Project →</span></a>
-      <a class="btn btn-outline" data-route="services" data-cursor><span>Explore Services</span></a>
+      <a href="/contact" class="btn btn-primary" data-route="contact" data-cursor><span>Start a Project →</span></a>
+      <a href="/services" class="btn btn-outline" data-route="services" data-cursor><span>Explore Services</span></a>
     </div>
     <div class="hero-trust">
       <div class="hero-trust-badges">
@@ -35,7 +35,7 @@ export const HTML = `
       <span class="kicker">Who We Are</span>
       <h2 class="section-title">A studio where design intuition meets artificial intelligence.</h2>
       <p class="section-sub">We're a hybrid team of engineers, designers, and AI specialists who build products that think, adapt, and act — not just sit on a server waiting for input.</p>
-      <a class="section-cta-link" data-route="about" data-cursor>Learn about our studio →</a>
+      <a href="/about" class="section-cta-link" data-route="about" data-cursor>Learn about our studio →</a>
     </div>
     <div class="about-right">
       <p class="about-line reveal">AI that does more than answer.<br><span class="text-gradient-gold">It acts.</span></p>
@@ -57,7 +57,7 @@ export const HTML = `
       <p class="section-sub">Every service is built to work together — design, engineering, and AI, under one roof, moving at the same velocity.</p>
     </div>
     <div class="services-grid js-services" data-limit="6"></div>
-    <a class="section-cta-link" data-route="services" data-cursor>View all 15 services →</a>
+    <a href="/services" class="section-cta-link" data-route="services" data-cursor>View all 15 services →</a>
   </div>
 </section>
 
@@ -112,7 +112,7 @@ export const HTML = `
       </div>
     
     </div>
-    <a class="section-cta-link" data-route="ai-solutions" data-cursor>Explore AI solutions →</a>
+    <a href="/ai-solutions" class="section-cta-link" data-route="ai-solutions" data-cursor>Explore AI solutions →</a>
   </div>
 </section>
 
@@ -259,7 +259,7 @@ export const HTML = `
       </div>
     </div>
     <div class="related-row reveal" style="margin-top:64px;">
-      <a class="related-pill" data-route="services" data-cursor>View all services →</a><a class="related-pill" data-route="ai-solutions" data-cursor>AI Solutions →</a><a class="related-pill" data-route="case-studies" data-cursor>Case Studies →</a>
+      <a href="/services" class="related-pill" data-route="services" data-cursor>View all services →</a><a href="/ai-solutions" class="related-pill" data-route="ai-solutions" data-cursor>AI Solutions →</a><a href="/case-studies" class="related-pill" data-route="case-studies" data-cursor>Case Studies →</a>
     </div>
   </div>
 </section>

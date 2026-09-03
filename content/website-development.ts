@@ -3,7 +3,7 @@ export const HTML = `
   <div class="grid-overlay"></div>
   <canvas class="page-hero-canvas" data-network></canvas>
   <div class="container page-hero-inner">
-    <div class="breadcrumb"><a data-route="home">Home</a><span>/</span><a data-route="services">Services</a><span>/</span><span>Website Development</span></div>
+    <div class="breadcrumb"><a href="/" data-route="home">Home</a><span>/</span><a href="/services" data-route="services">Services</a><span>/</span><span>Website Development</span></div>
     <div class="res-hero-grid">
       <div class="res-hero-copy">
         <span class="kicker">Website Development</span>
@@ -136,7 +136,7 @@ export const HTML = `
     <div class="wd-banner reveal" data-depth="1.4">
       <span class="kicker">Let's Talk</span>
       <h2>Looking for a website that actually performs, not just looks nice in a mockup?</h2>
-      <a class="btn btn-primary" data-route="contact" data-cursor><span>Book a Free Consultation →</span></a>
+      <a href="/contact" class="btn btn-primary" data-route="contact" data-cursor><span>Book a Free Consultation →</span></a>
     </div>
   </div>
 </section>
@@ -484,9 +484,9 @@ export const HTML = `
 <section class="bg-alt">
   <div class="container">
     <div class="related-row reveal">
-      <a class="related-pill" data-route="mobile-app-development" data-cursor>Mobile App Development →</a>
-      <a class="related-pill" data-route="web-app-development" data-cursor>Web App Development →</a>
-      <a class="related-pill" data-route="services" data-cursor>View all services →</a>
+      <a href="/mobile-app-development" class="related-pill" data-route="mobile-app-development" data-cursor>Mobile App Development →</a>
+      <a href="/web-app-development" class="related-pill" data-route="web-app-development" data-cursor>Web App Development →</a>
+      <a href="/services" class="related-pill" data-route="services" data-cursor>View all services →</a>
     </div>
   </div>
 </section>

@@ -5,7 +5,7 @@ export const HTML = `
   <div class="container page-hero-inner">
     <div class="res-hero-grid">
       <div class="res-hero-copy">
-        <div class="breadcrumb"><a data-route="home">Home</a><span>/</span><a data-route="services">Services</a><span>/</span><span>Web App Development</span></div>
+        <div class="breadcrumb"><a href="/" data-route="home">Home</a><span>/</span><a href="/services" data-route="services">Services</a><span>/</span><span>Web App Development</span></div>
         <span class="kicker">Web App Development</span>
         <h1 class="page-title">
           <span class="reveal-line"><span>Complex web apps,</span></span>
@@ -136,7 +136,7 @@ export const HTML = `
     <div class="wd-banner reveal" data-depth="1.4">
       <span class="kicker">Let's Talk</span>
       <h2>Have a complex platform in mind that needs to scale from day one?</h2>
-      <a class="btn btn-primary" data-route="contact" data-cursor><span>Book a Free Consultation →</span></a>
+      <a href="/contact" class="btn btn-primary" data-route="contact" data-cursor><span>Book a Free Consultation →</span></a>
     </div>
   </div>
 </section>
@@ -485,9 +485,9 @@ export const HTML = `
 <section class="bg-alt">
   <div class="container">
     <div class="related-row reveal">
-      <a class="related-pill" data-route="website-development" data-cursor>Website Development →</a>
-      <a class="related-pill" data-route="mobile-app-development" data-cursor>Mobile App Development →</a>
-      <a class="related-pill" data-route="services" data-cursor>View all services →</a>
+      <a href="/website-development" class="related-pill" data-route="website-development" data-cursor>Website Development →</a>
+      <a href="/mobile-app-development" class="related-pill" data-route="mobile-app-development" data-cursor>Mobile App Development →</a>
+      <a href="/services" class="related-pill" data-route="services" data-cursor>View all services →</a>
     </div>
   </div>
 </section>

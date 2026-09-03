@@ -3,7 +3,7 @@ export const HTML = `
   <div class="grid-overlay"></div>
   <canvas class="page-hero-canvas" data-network></canvas>
   <div class="container page-hero-inner">
-    <div class="breadcrumb"><a data-route="home">Home</a><span>/</span><span>AI Solutions</span></div>
+    <div class="breadcrumb"><a href="/" data-route="home">Home</a><span>/</span><span>AI Solutions</span></div>
     <span class="kicker">AI Solutions</span>
     <h1 class="page-title">
       <span class="reveal-line"><span>AI that does more</span></span>
@@ -68,7 +68,7 @@ export const HTML = `
         <li>Self-correcting workflows with full audit trails</li>
         <li>Connects natively to your CRM, inbox, and tools</li>
       </ul>
-      <a class="btn btn-outline" style="margin-top:40px;" data-route="ai-automation" data-cursor><span>Explore AI Automation →</span></a>
+      <a href="/ai-automation" class="btn btn-outline" style="margin-top:40px;" data-route="ai-automation" data-cursor><span>Explore AI Automation →</span></a>
     </div>
     <div class="auto-visual reveal">
       <div class="auto-chip c1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8L12 3z"/></svg>Workflow automated</div>
@@ -100,7 +100,7 @@ export const HTML = `
         <li>Investor &amp; portfolio dashboards</li>
         <li>Tenant, lease, and maintenance workflows</li>
       </ul>
-      <a class="btn btn-outline" style="margin-top:40px;" data-route="contact" data-cursor><span>Start a Project →</span></a>
+      <a href="/contact" class="btn btn-outline" style="margin-top:40px;" data-route="contact" data-cursor><span>Start a Project →</span></a>
     </div>
   </div>
 </section>
@@ -137,7 +137,7 @@ export const HTML = `
       </div>
     </div>
     <div class="related-row reveal" style="margin-top:64px;">
-      <a class="related-pill" data-route="ai-agent" data-cursor>AI Agents →</a><a class="related-pill" data-route="ai-chatbot" data-cursor>AI Chatbots →</a><a class="related-pill" data-route="ai-automation" data-cursor>AI Automation →</a>
+      <a href="/ai-agent" class="related-pill" data-route="ai-agent" data-cursor>AI Agents →</a><a href="/ai-chatbot" class="related-pill" data-route="ai-chatbot" data-cursor>AI Chatbots →</a><a href="/ai-automation" class="related-pill" data-route="ai-automation" data-cursor>AI Automation →</a>
     </div>
   </div>
 </section>
