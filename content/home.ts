@@ -64,8 +64,8 @@ export const HTML = `
 <section class="bg-alt ai-home-section">
   <div class="float-orbs" id="orbsAiSolutions"></div>
   <div class="ai-hero-visual">
-    <img class="ai-hero-visual-desktop" src="/media/fa988e120dfb.png" alt="AI-powered dashboard interface built by Design World Studio" loading="lazy">
-    <img class="ai-hero-visual-mobile" src="/media/fa988e120dfb.png" alt="AI-powered dashboard interface built by Design World Studio" loading="lazy">
+    <img class="ai-hero-visual-desktop" src="/media/fa988e120dfb.webp" alt="AI-powered dashboard interface built by Design World Studio" loading="lazy">
+    <img class="ai-hero-visual-mobile" src="/media/fa988e120dfb.webp" alt="AI-powered dashboard interface built by Design World Studio" loading="lazy">
   </div>
   <div class="container z-content">
     <div class="section-head reveal">
