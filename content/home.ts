@@ -15,9 +15,9 @@ export const HTML = `
     </div>
     <div class="hero-trust">
       <div class="hero-trust-badges">
-        <span class="hero-trust-badge"><img src="/media/badges/badge-clutch.png" alt="Clutch" loading="lazy"></span>
-        <span class="hero-trust-badge"><img src="/media/badges/badge-bbb.png" alt="BBB Accredited Business" loading="lazy"></span>
-        <span class="hero-trust-badge"><img src="/media/badges/badge-trustpilot.png" alt="Trustpilot" loading="lazy"></span>
+        <span class="hero-trust-badge"><img src="/media/badges/badge-clutch.png" alt="Clutch" width="195" height="63" loading="lazy"></span>
+        <span class="hero-trust-badge"><img src="/media/badges/badge-bbb.png" alt="BBB Accredited Business" width="225" height="90" loading="lazy"></span>
+        <span class="hero-trust-badge"><img src="/media/badges/badge-trustpilot.png" alt="Trustpilot" width="270" height="148" loading="lazy"></span>
       </div>
     </div>
   </div>
@@ -26,7 +26,7 @@ export const HTML = `
 
 <section class="bg-alt">
   <div class="skyline" id="skylineAbout">
-    <img class="skyline-img" src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?q=80&w=1600&auto=format&fit=crop" alt="City skyline at night" loading="lazy">
+    <img class="skyline-img" src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?q=80&w=1600&auto=format&fit=crop" alt="City skyline at night" width="1600" height="1067" loading="lazy">
     <div class="skyline-tint"></div>
     <div class="skyline-twinkle" id="skylineAboutTwinkle"></div>
   </div>
@@ -64,8 +64,8 @@ export const HTML = `
 <section class="bg-alt ai-home-section">
   <div class="float-orbs" id="orbsAiSolutions"></div>
   <div class="ai-hero-visual">
-    <img class="ai-hero-visual-desktop" src="/media/fa988e120dfb.webp" alt="AI-powered dashboard interface built by Design World Studio" loading="lazy">
-    <img class="ai-hero-visual-mobile" src="/media/fa988e120dfb.webp" alt="AI-powered dashboard interface built by Design World Studio" loading="lazy">
+    <img class="ai-hero-visual-desktop" src="/media/fa988e120dfb.webp" alt="AI-powered dashboard interface built by Design World Studio" width="352" height="477" loading="lazy">
+    <img class="ai-hero-visual-mobile" src="/media/fa988e120dfb.webp" alt="AI-powered dashboard interface built by Design World Studio" width="352" height="477" loading="lazy">
   </div>
   <div class="container z-content">
     <div class="section-head reveal">
@@ -124,17 +124,17 @@ export const HTML = `
     </div>
     <div class="portfolio-grid">
       <a class="project spotlight" data-cursor href="/work-ziptrip" style="--tint:linear-gradient(135deg, rgba(0,150,205,.48), rgba(6,24,66,.6)); cursor:pointer;">
-        <img class="project-img" src="/media/96a794cf673e.webp" alt="ZipTrip — AI-Powered Travel App" loading="lazy">
+        <img class="project-img" src="/media/96a794cf673e.webp" alt="ZipTrip — AI-Powered Travel App" width="900" height="600" loading="lazy">
         <div class="project-tint"></div>
         <div class="project-body"><small>AI-Powered Travel App</small><h3>ZipTrip</h3><p>AI trip planning across flights, hotels, and cruises</p></div>
       </a>
       <a class="project" data-cursor href="/work-crewiq" style="--tint:linear-gradient(135deg, rgba(245,166,35,.42), rgba(10,13,19,.6)); cursor:pointer;">
-        <img class="project-img" src="/media/f0b71b98daf7.webp" alt="CrewIQ — AI-Powered Workforce App" loading="lazy">
+        <img class="project-img" src="/media/f0b71b98daf7.webp" alt="CrewIQ — AI-Powered Workforce App" width="900" height="600" loading="lazy">
         <div class="project-tint"></div>
         <div class="project-body"><small>AI-Powered Workforce App</small><h3>CrewIQ</h3><p>AI job matching, verified clock-in, and transparent pay</p></div>
       </a>
       <a class="project" data-cursor href="/work-fovera" style="--tint:linear-gradient(135deg, rgba(245,166,35,.42), rgba(10,13,19,.6)); cursor:pointer;">
-        <img class="project-img" src="/media/c579cc61a782.webp" alt="Fovera — AI-Powered Food Compliance App" loading="lazy">
+        <img class="project-img" src="/media/c579cc61a782.webp" alt="Fovera — AI-Powered Food Compliance App" width="900" height="600" loading="lazy">
         <div class="project-tint"></div>
         <div class="project-body"><small>AI-Powered Food Compliance App</small><h3>Fovera</h3><p>AI-checked allergen data, recipe costing, and label approval in one app</p></div>
       </a>

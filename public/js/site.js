@@ -1841,6 +1841,7 @@ window.__bootSite = function(){
     // the scroll- and pointer-driven rotation rather than replacing it.
     var t0 = null;
     function frame(now){
+      if (document.hidden) { requestAnimationFrame(frame); return; }
       if (t0 === null) t0 = now || 0;
       var t = ((now || 0) - t0) / 1000;
       var idleY = Math.sin(t * 0.55) * 3.2;
@@ -2069,7 +2070,11 @@ window.__bootSite = function(){
      ========================================================== */
   (function(){
     var canvases = Array.from(document.querySelectorAll('.page-hero-canvas[data-network]'));
-    if (!canvases.length || reducedMotion) return;
+    // This 3D canvas background is purely decorative and mouse-reactive, so it
+    // has no purpose on touch devices — skipping it there removes a permanent
+    // 60fps main-thread cost on exactly the class of device performance
+    // audits (and most real visitors) use.
+    if (!canvases.length || reducedMotion || window.matchMedia('(pointer: coarse)').matches) return;
 
     var rigs = canvases.map(function(cv){
       var ctx = cv.getContext('2d');
@@ -2131,6 +2136,7 @@ window.__bootSite = function(){
     }
 
     (function loop(now){
+      if (document.hidden) { requestAnimationFrame(loop); return; }
       rigs.forEach(function(rig){
         var page = rig.cv.closest('.page');
         if (!page || !page.classList.contains('active')) return;
@@ -2172,6 +2178,12 @@ window.__bootSite = function(){
   /* ---------- hero canvas: procedural neural network ---------- */
   var canvas = document.getElementById('hero-canvas');
   if (!canvas) return;   /* hero canvas only exists on the home route */
+  // Same reasoning as the sub-page network canvases above: this is a
+  // decorative, mouse-reactive 3D background with a permanent 60fps
+  // render loop. On touch devices (no hover, and exactly what mobile
+  // performance audits measure) it costs real main-thread time for zero
+  // visible benefit, so skip it there and on reduced-motion.
+  if (reducedMotion || window.matchMedia('(pointer: coarse)').matches) return;
   var ctx = canvas.getContext('2d');
   var W, H, DPR = Math.min(window.devicePixelRatio || 1, 2);
   var nodes = [];
@@ -2255,6 +2267,7 @@ window.__bootSite = function(){
 
   var t0 = performance.now();
   function loop(now){
+    if (document.hidden) { requestAnimationFrame(loop); return; }
     var t = (now - t0) / 1000;
     var cx = W*0.72, cy = H*0.46;
     if (W < 900) { cx = W*0.5; cy = H*0.62; }
