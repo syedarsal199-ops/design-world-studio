@@ -11,7 +11,11 @@ const GREETING: ChatMessage = {
 };
 
 const AUTO_OPEN_STORAGE_KEY = 'dws_chat_auto_opened';
-const AUTO_OPEN_DELAY_MS = 1500;
+// Deliberately later than the lead popup (3s) and spaced out so the two
+// auto-triggered widgets never compete for the visitor's attention at once,
+// and so this doesn't add extra main-thread work during the critical
+// initial-load window.
+const AUTO_OPEN_DELAY_MS = 7000;
 
 export default function ChatWidget() {
   const [open, setOpen] = useState(false);
@@ -39,6 +43,10 @@ export default function ChatWidget() {
     if (alreadyOpened) return;
 
     const timer = setTimeout(() => {
+      // Skip this time if the welcome lead popup is currently open — never
+      // show two unsolicited overlays to a visitor at once. It's still
+      // reachable normally via the chat bubble.
+      if (document.querySelector('.dws-popup-overlay')) return;
       setOpen(true);
       try {
         sessionStorage.setItem(AUTO_OPEN_STORAGE_KEY, '1');
