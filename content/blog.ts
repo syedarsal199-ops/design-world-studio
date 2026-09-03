@@ -16,6 +16,12 @@ export const HTML = `
 <section class="bg-alt">
   <div class="container">
     <div class="blog-grid" id="blogGrid">
+      <a class="blog-card reveal" href="/blog-mobile-app-development-cost-2026">
+        <div class="blog-meta"><span class="blog-tag">Mobile App Development</span><span class="blog-date">September 2026 &middot; 8 min read</span></div>
+        <h3>Mobile App Development Cost in 2026: What You&rsquo;ll Actually Pay</h3>
+        <p>Real price ranges for MVPs, full-featured apps, and enterprise platforms &mdash; and what actually drives the cost up or down.</p>
+        <span class="blog-read">Read article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+      </a>
       <a class="blog-card reveal" href="/blog-real-estate-website-development-2026">
         <div class="blog-meta"><span class="blog-tag">Website Development</span><span class="blog-date">September 2026 · 8 min read</span></div>
         <h3>Real Estate Website Development in 2026: The Complete Guide for US Brokerages</h3>
