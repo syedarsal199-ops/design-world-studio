@@ -29,12 +29,12 @@ const ARTICLE_SCHEMA = {
   description: DESCRIPTION,
   datePublished: '2026-09-02',
   dateModified: '2026-09-02',
-  mainEntityOfPage: 'https://designworldstudio.com/blog-real-estate-website-development-2026',
+  mainEntityOfPage: 'https://www.designworldstudio.com/blog-real-estate-website-development-2026',
   author: { '@type': 'Organization', name: 'Design World Studio' },
   publisher: {
     '@type': 'Organization',
     name: 'Design World Studio',
-    logo: { '@type': 'ImageObject', url: 'https://designworldstudio.com/favicon.svg' },
+    logo: { '@type': 'ImageObject', url: 'https://www.designworldstudio.com/favicon.svg' },
   },
 };
 

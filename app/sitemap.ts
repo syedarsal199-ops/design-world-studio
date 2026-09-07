@@ -1,6 +1,6 @@
 import type { MetadataRoute } from 'next';
 
-const BASE_URL = 'https://designworldstudio.com';
+const BASE_URL = 'https://www.designworldstudio.com';
 
 // Every static route in the site, grouped by priority tier.
 const CORE = ['']; // home

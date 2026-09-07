@@ -15,12 +15,12 @@ const ARTICLE_SCHEMA = {
   description: "The MVP that has to be rewritten at 10,000 users was scoped wrong from the start. A few architectural decisions that cost nothing early and save everything later.",
   datePublished: '2026-07-01',
   dateModified: '2026-07-01',
-  mainEntityOfPage: 'https://designworldstudio.com/blog-mvp-to-scale-architecture',
+  mainEntityOfPage: 'https://www.designworldstudio.com/blog-mvp-to-scale-architecture',
   author: { '@type': 'Organization', name: 'Design World Studio' },
   publisher: {
     '@type': 'Organization',
     name: 'Design World Studio',
-    logo: { '@type': 'ImageObject', url: 'https://designworldstudio.com/favicon.svg' },
+    logo: { '@type': 'ImageObject', url: 'https://www.designworldstudio.com/favicon.svg' },
   },
 };
 

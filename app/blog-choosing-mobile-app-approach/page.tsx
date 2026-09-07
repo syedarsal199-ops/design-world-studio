@@ -15,12 +15,12 @@ const ARTICLE_SCHEMA = {
   description: "There\u2019s no universally \"best\" mobile stack \u2014 only the right choice for a given team, timeline, and feature set. The framework we use when scoping a client\u2019s build.",
   datePublished: '2026-07-01',
   dateModified: '2026-07-01',
-  mainEntityOfPage: 'https://designworldstudio.com/blog-choosing-mobile-app-approach',
+  mainEntityOfPage: 'https://www.designworldstudio.com/blog-choosing-mobile-app-approach',
   author: { '@type': 'Organization', name: 'Design World Studio' },
   publisher: {
     '@type': 'Organization',
     name: 'Design World Studio',
-    logo: { '@type': 'ImageObject', url: 'https://designworldstudio.com/favicon.svg' },
+    logo: { '@type': 'ImageObject', url: 'https://www.designworldstudio.com/favicon.svg' },
   },
 };
 

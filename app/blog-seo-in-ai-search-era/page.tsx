@@ -15,12 +15,12 @@ const ARTICLE_SCHEMA = {
   description: "AI-generated answers and chat-based search now sit in front of a large share of searches. That changes what SEO should prioritize, not whether SEO still matters.",
   datePublished: '2026-07-01',
   dateModified: '2026-07-01',
-  mainEntityOfPage: 'https://designworldstudio.com/blog-seo-in-ai-search-era',
+  mainEntityOfPage: 'https://www.designworldstudio.com/blog-seo-in-ai-search-era',
   author: { '@type': 'Organization', name: 'Design World Studio' },
   publisher: {
     '@type': 'Organization',
     name: 'Design World Studio',
-    logo: { '@type': 'ImageObject', url: 'https://designworldstudio.com/favicon.svg' },
+    logo: { '@type': 'ImageObject', url: 'https://www.designworldstudio.com/favicon.svg' },
   },
 };
 

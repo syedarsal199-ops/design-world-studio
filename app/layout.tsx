@@ -22,7 +22,7 @@ const inter = Inter({
   display: 'swap',
 });
 
-const SITE_URL = 'https://designworldstudio.com';
+const SITE_URL = 'https://www.designworldstudio.com';
 const SITE_NAME = 'Design World Studio';
 const SITE_TITLE = 'Design World Studio \u2014 AI & Software Development Company | Web, Mobile & AI Automation';
 const SITE_DESCRIPTION =
