@@ -325,8 +325,11 @@ window.__bootSite = function(){
     TITLES[post.route] = post.title + ' — Design World Studio Blog';
     var grid = document.getElementById('blogGrid');
     if (grid) grid.insertAdjacentHTML(prepend ? 'afterbegin' : 'beforeend', buildPostCardHtml(post));
-    var mount = document.getElementById('blogPostsMount');
-    if (mount) mount.insertAdjacentHTML('beforeend', buildPostPageHtml(post));
+    // Each blog post is a real Next.js route with its own server-rendered
+    // page, so injecting a second hidden copy of every post into the DOM
+    // here is pure waste — it added thousands of nodes to every page load
+    // (including the home page) that no visitor ever saw. Navigation goes
+    // through site:navigate -> router.push, not these elements.
     return document.getElementById('route-' + post.route);
   }
   if (!window.__blogPostsRegistered) {
@@ -760,7 +763,7 @@ window.__bootSite = function(){
       p.route = 'work-' + slugify(p.name);
       ROUTES.push(p.route);
       TITLES[p.route] = p.name + ' — Case Study — Design World Studio';
-      if (mount) mount.insertAdjacentHTML('beforeend', buildProjectPageHtml(p));
+      /* real Next.js route renders this page — no hidden DOM copy needed */
     });
     /* the scroll-reveal observer above ran before these pages existed, so
        their .reveal elements were never observed and stayed invisible.
