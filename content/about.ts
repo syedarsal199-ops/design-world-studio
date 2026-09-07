@@ -19,18 +19,14 @@ export const HTML = `
       <span class="kicker">Our Approach</span>
       <h2 class="section-title">Design-led. AI-native. Built to last.</h2>
       <p class="section-sub">We don't bolt AI onto finished products — it's part of the architecture from the first sketch. Every product we ship pairs the craft of a design studio with the rigor of a software house.</p>
-      <div class="about-visual reveal" style="margin-top:32px;">
-        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1200&auto=format&fit=crop" alt="Design World Studio team collaborating together" loading="lazy" decoding="async">
-        <span class="about-visual-badge"><b></b>Studio, working session</span>
-      </div>
     </div>
     <div class="about-right">
       <p class="about-line reveal">AI that does more than answer.<br><span class="text-gradient-gold">It acts.</span></p>
       <div class="stats">
-        <div class="stat reveal"><b>120+</b><small>Products Shipped</small></div>
-        <div class="stat reveal"><b>40+</b><small>AI Systems Deployed</small></div>
-        <div class="stat reveal"><b>98%</b><small>Client Retention</small></div>
-        <div class="stat reveal"><b>15</b><small>Core Service Lines</small></div>
+        <div class="stat reveal"><b>16</b><small>Disciplines In-House</small></div>
+        <div class="stat reveal"><b>Senior</b><small>Built, Start to Finish</small></div>
+        <div class="stat reveal"><b>iOS + Android</b><small>From One Codebase</small></div>
+        <div class="stat reveal"><b>1 Day</b><small>Typical Reply Time</small></div>
       </div>
     </div>
   </div>
@@ -50,23 +46,44 @@ export const HTML = `
 <section class="bg-alt">
   <div class="container">
     <div class="section-head reveal">
-      <span class="kicker">Studio Life</span>
-      <h2 class="section-title">Real people, real work, every day.</h2>
-      <p class="section-sub">No stock-photo agency shots — this is the studio, mid-project.</p>
+      <span class="kicker">How We Work</span>
+      <h2 class="section-title">Direct access to the people building your product.</h2>
+      <p class="section-sub">The single biggest difference between working with us and working with an agency is who you actually talk to.</p>
     </div>
-    <div class="studio-gallery">
-      <div class="studio-gallery-item reveal">
-        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1200&auto=format&fit=crop" alt="Design World Studio open workspace" loading="lazy" decoding="async">
-        <span class="studio-gallery-cap">The studio floor</span>
-      </div>
-      <div class="studio-gallery-item reveal">
-        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1200&auto=format&fit=crop" alt="Team reviewing a project on a laptop" loading="lazy" decoding="async">
-        <span class="studio-gallery-cap">Weekly review</span>
-      </div>
-      <div class="studio-gallery-item reveal">
-        <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=1200&auto=format&fit=crop" alt="Close collaboration between two team members" loading="lazy" decoding="async">
-        <span class="studio-gallery-cap">Pairing session</span>
-      </div>
+    <div class="article-body reveal" style="max-width:820px;margin:0 auto;">
+      <p>At most agencies, the people who win your project are not the people who build it. You are sold by a partner, handed to an account manager, and your product is built by whoever is on the bench that month. Every question you ask travels through two people before it reaches someone who can answer it, and every answer travels back the same way.</p>
+      <p>We work the opposite way, and it is deliberate rather than a limitation. The person who scopes your project is the person who builds it. When you ask why a screen behaves a certain way, you are asking the engineer who wrote it. When you want to change direction in week three, that conversation takes one message, not a change-request meeting and a revised statement of work.</p>
+      <p>That model only works at a deliberate size, so we take on a small number of engagements at a time. It means we are not the right studio for every project &mdash; but for the ones we take, you get senior attention for the whole build rather than for the pitch.</p>
+
+      <h3>What we are genuinely good at</h3>
+      <p>Products where the intelligence is the product, not a feature bolted on afterwards: AI-driven matching and recommendation, systems that qualify and route leads without a human waiting by a phone, and mobile apps where the experience has to feel native rather than like a website in a shell. Our shipped work clusters here for a reason &mdash; ZipTrip matching travel itineraries, CrewIQ matching workers to shifts, Unbroken Investing matching investors to deals. They are different industries running variations of the same hard problem.</p>
+
+      <h3>What we will tell you we are not right for</h3>
+      <p>If you need a five-page brochure site, a template will serve you better and cost a fraction of what we would charge &mdash; we will say so rather than take the work. If you need a team of twenty engineers embedded for a year, you need a staffing partner, not a studio. And if your project depends on a technology we have not shipped in production, we will tell you that before you sign rather than learn it on your budget.</p>
+      <p>We would rather lose a project at the scoping call than deliver one badly. It is a slower way to grow, and it is the reason the clients we do take on tend to come back for the next build.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="kicker">What Guides the Work</span>
+      <h2 class="section-title">Four things we hold to on every build.</h2>
+      <p class="section-sub">Not values on a wall &mdash; the specific commitments that decide how your project actually runs.</p>
+    </div>
+    <div class="article-body reveal" style="max-width:820px;margin:0 auto;">
+      <h3>Scope is fixed before you are billed</h3>
+      <p>What you approve at proposal stage is what you pay. Change requests get priced up front and separately, so the number you budgeted is the number you pay unless you consciously decide otherwise. Nobody enjoys the conversation where a project quietly doubles.</p>
+
+      <h3>You see running software every week</h3>
+      <p>Progress is demonstrated in a live staging environment you can open on your own phone, not described in a status email. It means problems surface in week two when they are cheap to fix, rather than at handover when they are expensive.</p>
+
+      <h3>We build what will still make sense in two years</h3>
+      <p>It is easy to ship something quickly that becomes impossible to change later. We architect for the version of your product that exists after you have learned what your users actually want, because almost every product we have built has needed to change direction at least once.</p>
+
+      <h3>We say the uncomfortable thing early</h3>
+      <p>If a feature you are attached to is going to cost more than it will return, if a timeline is not realistic, or if the simpler approach is the better one, you will hear it while there is still time to act on it. A studio that agrees with everything you say is not being easy to work with &mdash; it is being expensive later.</p>
     </div>
   </div>
 </section>

@@ -16,10 +16,10 @@ export const HTML = `
 <section class="bg-alt">
   <div class="container">
     <div class="stat-bar" style="margin-bottom:64px;">
-      <div class="stat reveal"><b>120+</b><small>Projects Delivered</small></div>
-      <div class="stat reveal"><b>$40M+</b><small>Client Revenue Influenced</small></div>
-      <div class="stat reveal"><b>9</b><small>Industries Served</small></div>
-      <div class="stat reveal"><b>4.9★</b><small>Avg. Client Rating</small></div>
+      <div class="stat reveal"><b>6</b><small>Products Shipped End-to-End</small></div>
+      <div class="stat reveal"><b>6</b><small>Industries</small></div>
+      <div class="stat reveal"><b>iOS + Android</b><small>Every App, One Codebase</small></div>
+      <div class="stat reveal"><b>AI-Native</b><small>Not Bolted On</small></div>
     </div>
     <div class="portfolio-grid">
       <a class="project spotlight" data-cursor href="/work-ziptrip" style="--tint:linear-gradient(135deg, rgba(0,150,205,.48), rgba(6,24,66,.6)); cursor:pointer;">
@@ -52,6 +52,25 @@ export const HTML = `
         <div class="project-tint"></div>
         <div class="project-body"><small>Music &amp; Playlists App</small><h3>Joytify</h3><p>320kbps streaming with synced lyrics and instant search</p><div class="tags"><span>Music Streaming</span><span>Playlists</span><span>iOS &amp; Android</span></div></div>
       </a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="kicker">The Through-Line</span>
+      <h2 class="section-title">Six products, one hard problem.</h2>
+      <p class="section-sub">These look like six unrelated apps across six industries. They are closer to six versions of the same engineering challenge.</p>
+    </div>
+    <div class="article-body reveal" style="max-width:820px;margin:0 auto;">
+      <p>Look at what these products actually do underneath the branding. ZipTrip matches a traveller to an itinerary across flights, hotels and cruises. CrewIQ matches a worker to the shifts their skills actually fit. Unbroken Investing matches an investor to deals worth their attention. Fovera matches a recipe against allergen and compliance rules that change by jurisdiction.</p>
+      <p>Four different industries, and underneath, the same problem: take messy real-world data, work out what a specific person needs from it, and surface the right result fast enough that they trust it. That is the problem we have spent the most time solving &mdash; and it is why we take real estate and PropTech work seriously. Matching a buyer to a property, and routing a lead to the right agent before it goes cold, is the same shape of problem we have now shipped four times.</p>
+      <p>The other two are here for a different reason. YouDJ Mixer and Joytify are real-time audio products, where a delay of even a fraction of a second is the difference between something that feels professional and something that feels broken. They are the projects that taught us the most about performance discipline, and that discipline is why the products above stay responsive once the data behind them gets large.</p>
+
+      <h3>What we can show you beyond a screenshot</h3>
+      <p>Portfolio images only prove something was designed, not that it works. If you are seriously evaluating us, ask for a walkthrough of any product on this page &mdash; we will screen-share the running app, show you how a specific feature is built, and tell you what we would do differently if we built it again today. That last part is usually the most useful thing you can learn about a studio.</p>
+      <p>We would rather you decide on the strength of what we can demonstrate than on a number in a marketing headline.</p>
     </div>
   </div>
 </section>

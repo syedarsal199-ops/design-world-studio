@@ -12,8 +12,8 @@ export const HTML = `
     <p class="page-sub">The same discipline, applied to every project — from a two-week MVP sprint to a multi-quarter platform build.</p>
     <div class="pf-stats">
       <div class="pf-stat reveal"><b>8&ndash;16 wks</b><small>Discovery to Launch</small></div>
-      <div class="pf-stat reveal"><b>120+</b><small>Products Shipped</small></div>
-      <div class="pf-stat reveal"><b>98%</b><small>On-Time Delivery</small></div>
+      <div class="pf-stat reveal"><b>5 Stages</b><small>Every Engagement</small></div>
+      <div class="pf-stat reveal"><b>Weekly</b><small>Live Staging Demos</small></div>
       <div class="pf-stat reveal"><b>30 days</b><small>Post-Launch Support</small></div>
     </div>
   </div>
@@ -67,6 +67,41 @@ export const HTML = `
   </div>
   <div class="marquee-wrap">
     <div class="marquee-track" id="marqueeTrack"></div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="kicker">Stage by Stage</span>
+      <h2 class="section-title">What actually happens, week by week.</h2>
+      <p class="section-sub">Most agencies describe their process in adjectives. Here is ours in deliverables &mdash; what you receive, and what you sign off before anything moves forward.</p>
+    </div>
+    <div class="article-body reveal" style="max-width:820px;margin:0 auto;">
+
+      <h3>1. Discovery &mdash; typically week one</h3>
+      <p>We map what you are building, who it is for, and what success actually looks like in numbers rather than adjectives. The output is a written scope document listing every screen and every feature, with anything explicitly excluded written down as excluded. Most disputes later in a project trace back to something both sides assumed was included, so we put the boundary in writing while it is still cheap to discuss.</p>
+      <p><b>You approve:</b> the scope document, the timeline, and the fixed price. Nothing is built before this is signed.</p>
+
+      <h3>2. Architecture and design &mdash; weeks one to three</h3>
+      <p>Before any production code exists, you see the actual screens and the data model behind them. This is where the expensive decisions get made: how your data is structured, which parts need to be custom-built versus integrated, and where the system needs room to change later. Getting this wrong is what makes products impossible to extend in year two, so we spend real time here rather than rushing to visible progress.</p>
+      <p><b>You approve:</b> the interface designs and the technical approach.</p>
+
+      <h3>3. Build &mdash; the bulk of the timeline</h3>
+      <p>Development runs in weekly cycles, and at the end of each one you get a link to a live staging environment you can open on your own phone. Not a screenshot, not a progress percentage &mdash; running software you can use. This is the single most important part of how we work, because it means a misunderstanding surfaces in week two while it costs an afternoon to fix, instead of at handover when it costs a rebuild.</p>
+      <p><b>You get, every week:</b> a working build, and a short written note on what changed and what is next.</p>
+
+      <h3>4. Testing and hardening &mdash; before launch</h3>
+      <p>Real devices, real edge cases, real load. We test what happens when the network drops mid-transaction, when a user enters something unexpected, and when a third-party service you depend on is slow or down. Security review and performance work happen here too, not as an afterthought once users are already on the system.</p>
+      <p><b>You approve:</b> the release candidate, after using it yourself.</p>
+
+      <h3>5. Launch and 30 days of support</h3>
+      <p>We handle the deployment, the app store submissions where relevant, and the monitoring in the first weeks when real usage always reveals things testing did not. Thirty days of support is included in every engagement &mdash; not as an upsell, but because a product that breaks quietly two weeks after launch is not a product we finished.</p>
+      <p><b>You get:</b> the running product, the source code, and documentation your next developer can actually follow.</p>
+
+      <h3>What happens when something goes wrong</h3>
+      <p>Occasionally a project hits something neither side predicted &mdash; a third-party API turns out not to do what its documentation claims, or testing reveals a feature is harder than it looked. When that happens you hear about it the same week, with the options and what each one costs in time and money. You will not find out at the deadline. It is the least comfortable conversation in this business and the one that most determines whether a project ends well.</p>
+    </div>
   </div>
 </section>
 
