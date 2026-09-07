@@ -16,6 +16,12 @@ export const HTML = `
 <section class="bg-alt">
   <div class="container">
     <div class="blog-grid" id="blogGrid">
+      <a class="blog-card reveal" href="/blog-proptech-solutions-2026">
+        <div class="blog-meta"><span class="blog-tag">PropTech</span><span class="blog-date">September 2026 &middot; 14 min read</span></div>
+        <h3>PropTech Solutions in 2026: AI Agents, Mobile Apps, Websites &amp; Marketing for Real Estate</h3>
+        <p>78% of buyers hire the first agent who responds &mdash; yet the average agent takes 15+ hours. The complete guide to the four PropTech layers that fix it, and why they only work as one system.</p>
+        <span class="blog-read">Read article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+      </a>
       <a class="blog-card reveal" href="/blog-mobile-app-development-cost-2026">
         <div class="blog-meta"><span class="blog-tag">Mobile App Development</span><span class="blog-date">September 2026 &middot; 8 min read</span></div>
         <h3>Mobile App Development Cost in 2026: What You&rsquo;ll Actually Pay</h3>
