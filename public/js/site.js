@@ -5,7 +5,7 @@ window.__bootSite = function(){
   var reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   var TITLES = {
-    'home': "Design World Studio — Building the Future with AI & Technology",
+    'home': "AI & PropTech Development Company | Design World Studio",
     'services': "Services — Design World Studio",
     'website-development': "Website Development — Design World Studio",
     'mobile-app-development': "Mobile App Development — Design World Studio",

@@ -3,8 +3,8 @@ import Page from '@/components/Page';
 import { HTML } from '@/content/home';
 
 export const metadata: Metadata = {
-  title: "AI & Software Development Company \u2014 Web, Mobile & AI Automation",
-  description: "Design World Studio designs, develops, automates, and scales intelligent digital products \u2014 websites, mobile apps, custom software, and AI automation \u2014 for ambitious businesses.",
+  title: "AI & PropTech Development Company",
+  description: "Design World Studio builds AI agents, mobile apps and websites for real estate and PropTech companies \u2014 systems that qualify leads in seconds, not hours.",
   alternates: { canonical: "/" },
 };
 

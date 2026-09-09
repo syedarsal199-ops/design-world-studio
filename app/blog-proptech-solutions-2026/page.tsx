@@ -6,7 +6,7 @@ const TITLE =
   'PropTech Solutions in 2026: AI Agents, Mobile Apps, Websites & Marketing for Real Estate';
 const META_TITLE = 'PropTech Solutions for Real Estate';
 const DESCRIPTION =
-  'A complete guide to PropTech solutions for real estate in 2026 — AI agentic systems that respond in seconds, mobile apps, IDX websites, and marketing that compounds. With real market data and costs.';
+  'A complete guide to PropTech in 2026 \u2014 AI agents that respond in seconds, mobile apps, IDX websites and marketing that compounds. With real data.';
 const URL = 'https://www.designworldstudio.com/blog-proptech-solutions-2026';
 const IMAGE = 'https://www.designworldstudio.com/media/proptech-solutions-stack.webp';
 

@@ -5,7 +5,7 @@ import { HTML } from '@/content/blog-real-estate-mobile-app-2026';
 const TITLE = 'Real Estate Mobile App Development in 2026: The Complete Guide for US Agencies';
 const META_TITLE = 'Real Estate Mobile App Development';
 const DESCRIPTION =
-  "Everything US real estate agencies and PropTech companies need to know about mobile app development in 2026 — must-have features, realistic costs, and how to choose a development partner.";
+  "What US real estate agencies need before building a mobile app in 2026: must-have features, realistic costs, and how to choose a partner.";
 
 export const metadata: Metadata = {
   title: META_TITLE,

@@ -4,7 +4,7 @@ import { HTML } from '@/content/blog-mvp-to-scale-architecture';
 
 export const metadata: Metadata = {
   title: "From MVP to Scale: Architecture",
-  description: "The MVP that has to be rewritten at 10,000 users was scoped wrong from the start. A few architectural decisions that cost nothing early and save everything later.",
+  description: "The MVP that gets rewritten at 10,000 users was scoped wrong on day one. How to architect a first build that survives its own success.",
   alternates: { canonical: "/blog-mvp-to-scale-architecture" },
 };
 
@@ -12,7 +12,7 @@ const ARTICLE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'BlogPosting',
   headline: 'From MVP to Scale: Architecting Your First Build for Growth',
-  description: "The MVP that has to be rewritten at 10,000 users was scoped wrong from the start. A few architectural decisions that cost nothing early and save everything later.",
+  description: "The MVP that gets rewritten at 10,000 users was scoped wrong on day one. How to architect a first build that survives its own success.",
   datePublished: '2026-07-01',
   dateModified: '2026-07-01',
   mainEntityOfPage: 'https://www.designworldstudio.com/blog-mvp-to-scale-architecture',
