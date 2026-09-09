@@ -3,7 +3,7 @@ import Page from '@/components/Page';
 import { HTML } from '@/content/blog-mvp-to-scale-architecture';
 
 export const metadata: Metadata = {
-  title: "From MVP to Scale: Architecting Your First Build for Growth",
+  title: "From MVP to Scale: Architecture",
   description: "The MVP that has to be rewritten at 10,000 users was scoped wrong from the start. A few architectural decisions that cost nothing early and save everything later.",
   alternates: { canonical: "/blog-mvp-to-scale-architecture" },
 };

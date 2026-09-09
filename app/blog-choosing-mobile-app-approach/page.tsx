@@ -3,7 +3,7 @@ import Page from '@/components/Page';
 import { HTML } from '@/content/blog-choosing-mobile-app-approach';
 
 export const metadata: Metadata = {
-  title: "Native, Cross-Platform, or AI-Assisted: Choosing Your Mobile Stack",
+  title: "Choosing Your Mobile Stack",
   description: "There\u2019s no universally \"best\" mobile stack \u2014 only the right choice for a given team, timeline, and feature set. The framework we use when scoping a client\u2019s build.",
   alternates: { canonical: "/blog-choosing-mobile-app-approach" },
 };

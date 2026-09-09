@@ -3,18 +3,18 @@ import Page from '@/components/Page';
 import { HTML } from '@/content/seo';
 
 export const metadata: Metadata = {
-  title: 'SEO Services — Technical & Content SEO That Ranks',
+  title: 'Technical & Content SEO Services',
   description: 'Technical and content SEO engineered for visibility, credibility, and compounding growth — measured in qualified traffic and revenue, not vanity rankings.',
   alternates: { canonical: "/seo" },
   openGraph: {
-    title: 'SEO Services — Technical & Content SEO That Ranks | Design World Studio',
+    title: 'Technical & Content SEO Services | Design World Studio',
     description: 'Technical and content SEO engineered for visibility, credibility, and compounding growth — measured in qualified traffic and revenue, not vanity rankings.',
     url: "/seo",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: 'SEO Services — Technical & Content SEO That Ranks | Design World Studio',
+    title: 'Technical & Content SEO Services | Design World Studio',
     description: 'Technical and content SEO engineered for visibility, credibility, and compounding growth — measured in qualified traffic and revenue, not vanity rankings.',
   },
 };

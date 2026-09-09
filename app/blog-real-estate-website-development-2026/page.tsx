@@ -3,11 +3,12 @@ import Page from '@/components/Page';
 import { HTML } from '@/content/blog-real-estate-website-development-2026';
 
 const TITLE = 'Real Estate Website Development in 2026: The Complete Guide for US Brokerages';
+const META_TITLE = 'Real Estate Website Development 2026';
 const DESCRIPTION =
   'Everything US real estate brokerages and PropTech companies need to know about website development in 2026 — must-have features, realistic costs, common mistakes, and how to choose a development partner.';
 
 export const metadata: Metadata = {
-  title: TITLE,
+  title: META_TITLE,
   description: DESCRIPTION,
   alternates: { canonical: '/blog-real-estate-website-development-2026' },
   keywords: [

@@ -3,7 +3,7 @@ import Page from '@/components/Page';
 import { HTML } from '@/content/blog-ai-native-development';
 
 export const metadata: Metadata = {
-  title: "Why AI-Native Development Is Beating \"AI Bolted On\"",
+  title: "Why AI-Native Development Wins",
   description: "Most teams are still adding AI as a feature after the fact. The products winning right now were architected around it from day one \u2014 here\u2019s what that looks like in practice.",
   alternates: { canonical: "/blog-ai-native-development" },
 };

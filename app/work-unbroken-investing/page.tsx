@@ -3,7 +3,7 @@ import Page from '@/components/Page';
 import { HTML } from '@/content/work-unbroken-investing';
 
 export const metadata: Metadata = {
-  title: "Unbroken Investing — Case Study — Design World Studio",
+  title: "Unbroken Investing — Case Study",
   description: "AI-Powered Investment Platform: AI-matched deal flow with real-time underwriting and risk analysis",
   alternates: { canonical: "/work-unbroken-investing" },
 };

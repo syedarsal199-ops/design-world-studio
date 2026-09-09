@@ -24,7 +24,7 @@ const inter = Inter({
 
 const SITE_URL = 'https://www.designworldstudio.com';
 const SITE_NAME = 'Design World Studio';
-const SITE_TITLE = 'Design World Studio \u2014 AI & Software Development Company | Web, Mobile & AI Automation';
+const SITE_TITLE = 'AI & PropTech Development Company | Design World Studio';
 const SITE_DESCRIPTION =
   'Design World Studio builds AI agents, mobile apps and websites for real estate and PropTech companies \u2014 systems that qualify leads in seconds, not hours.';
 

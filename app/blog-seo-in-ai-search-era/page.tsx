@@ -3,7 +3,7 @@ import Page from '@/components/Page';
 import { HTML } from '@/content/blog-seo-in-ai-search-era';
 
 export const metadata: Metadata = {
-  title: "SEO in the Age of AI Search: What Actually Still Works",
+  title: "SEO in the Age of AI Search",
   description: "AI-generated answers and chat-based search now sit in front of a large share of searches. That changes what SEO should prioritize, not whether SEO still matters.",
   alternates: { canonical: "/blog-seo-in-ai-search-era" },
 };

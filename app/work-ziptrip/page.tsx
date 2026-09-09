@@ -3,7 +3,7 @@ import Page from '@/components/Page';
 import { HTML } from '@/content/work-ziptrip';
 
 export const metadata: Metadata = {
-  title: "ZipTrip — Case Study — Design World Studio",
+  title: "ZipTrip — Case Study",
   description: "AI-Powered Travel App: AI trip planning across flights, hotels, and cruises",
   alternates: { canonical: "/work-ziptrip" },
 };

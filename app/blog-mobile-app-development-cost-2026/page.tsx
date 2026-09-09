@@ -3,11 +3,12 @@ import Page from '@/components/Page';
 import { HTML } from '@/content/blog-mobile-app-development-cost-2026';
 
 const TITLE = "Mobile App Development Cost in 2026: What You'll Actually Pay";
+const META_TITLE = 'Mobile App Development Cost in 2026';
 const DESCRIPTION =
   'How much does mobile app development cost in 2026? Real price ranges for MVPs, full-featured apps, and enterprise platforms, plus what actually drives the cost up or down.';
 
 export const metadata: Metadata = {
-  title: TITLE,
+  title: META_TITLE,
   description: DESCRIPTION,
   alternates: { canonical: '/blog-mobile-app-development-cost-2026' },
   keywords: [

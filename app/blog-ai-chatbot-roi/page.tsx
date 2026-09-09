@@ -3,7 +3,7 @@ import Page from '@/components/Page';
 import { HTML } from '@/content/blog-ai-chatbot-roi';
 
 export const metadata: Metadata = {
-  title: "The Real ROI of AI Chatbots vs. Traditional Support",
+  title: "The Real ROI of AI Chatbots",
   description: "\"Replace your support team with AI\" is a bad pitch. Here\u2019s the honest, narrower version \u2014 and where the real ROI actually comes from.",
   alternates: { canonical: "/blog-ai-chatbot-roi" },
 };

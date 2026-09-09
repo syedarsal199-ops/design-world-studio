@@ -3,18 +3,18 @@ import Page from '@/components/Page';
 import { HTML } from '@/content/blog';
 
 export const metadata: Metadata = {
-  title: 'Blog — AI, Software & Web Development Insights',
+  title: 'Blog — AI & Software Insights',
   description: 'Notes on AI-native development, mobile app strategy, SEO in the age of AI search, and how we scope, build, and ship digital products.',
   alternates: { canonical: "/blog" },
   openGraph: {
-    title: 'Blog — AI, Software & Web Development Insights | Design World Studio',
+    title: 'Blog — AI & Software Insights | Design World Studio',
     description: 'Notes on AI-native development, mobile app strategy, SEO in the age of AI search, and how we scope, build, and ship digital products.',
     url: "/blog",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: 'Blog — AI, Software & Web Development Insights | Design World Studio',
+    title: 'Blog — AI & Software Insights | Design World Studio',
     description: 'Notes on AI-native development, mobile app strategy, SEO in the age of AI search, and how we scope, build, and ship digital products.',
   },
 };

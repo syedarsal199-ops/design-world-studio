@@ -3,13 +3,14 @@ import Page from '@/components/Page';
 import { HTML } from '@/content/blog-ai-agents-real-estate';
 
 const TITLE = "AI Agents for Real Estate: What They Actually Do (and What They Can't)";
+const META_TITLE = 'AI Agents for Real Estate';
 const DESCRIPTION =
   'AI agents qualify leads, book showings and update your CRM within seconds — unlike chatbots, which only answer. What they genuinely do for brokerages, what they should never do, and how implementation actually works.';
 const URL = 'https://www.designworldstudio.com/blog-ai-agents-real-estate';
 const IMAGE = 'https://www.designworldstudio.com/media/ai-agents-vs-chatbot.webp';
 
 export const metadata: Metadata = {
-  title: TITLE,
+  title: META_TITLE,
   description: DESCRIPTION,
   alternates: { canonical: '/blog-ai-agents-real-estate' },
   keywords: [
@@ -24,7 +25,7 @@ export const metadata: Metadata = {
     'AI for brokerages',
   ],
   openGraph: {
-    title: TITLE,
+    title: META_TITLE,
     description: DESCRIPTION,
     url: URL,
     type: 'article',

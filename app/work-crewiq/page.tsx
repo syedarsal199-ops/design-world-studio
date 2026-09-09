@@ -3,7 +3,7 @@ import Page from '@/components/Page';
 import { HTML } from '@/content/work-crewiq';
 
 export const metadata: Metadata = {
-  title: "CrewIQ — Case Study — Design World Studio",
+  title: "CrewIQ — Case Study",
   description: "AI-Powered Workforce App: AI job matching, verified clock-in, and transparent pay",
   alternates: { canonical: "/work-crewiq" },
 };
