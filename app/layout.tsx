@@ -26,7 +26,7 @@ const SITE_URL = 'https://www.designworldstudio.com';
 const SITE_NAME = 'Design World Studio';
 const SITE_TITLE = 'Design World Studio \u2014 AI & Software Development Company | Web, Mobile & AI Automation';
 const SITE_DESCRIPTION =
-  'Design World Studio builds websites, mobile apps, custom software, and AI automation for ambitious businesses. AI agents, AI chatbots, MVP development, and full-stack engineering \u2014 rated by Clutch, BBB, and Trustpilot.';
+  'Design World Studio builds AI agents, mobile apps and websites for real estate and PropTech companies \u2014 systems that qualify leads in seconds, not hours.';
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
