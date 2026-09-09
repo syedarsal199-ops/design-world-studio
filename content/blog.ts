@@ -16,6 +16,12 @@ export const HTML = `
 <section class="bg-alt">
   <div class="container">
     <div class="blog-grid" id="blogGrid">
+      <a class="blog-card reveal" href="/blog-ai-agents-real-estate">
+        <div class="blog-meta"><span class="blog-tag">AI Agents</span><span class="blog-date">September 2026 &middot; 11 min read</span></div>
+        <h3>AI Agents for Real Estate: What They Actually Do (and What They Can&rsquo;t)</h3>
+        <p>Only 3.9% of brokerages still use no AI &mdash; so having it is no longer the advantage. What you point it at is. The honest boundary between what agents do well and what they should never touch.</p>
+        <span class="blog-read">Read article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+      </a>
       <a class="blog-card reveal" href="/blog-proptech-solutions-2026">
         <div class="blog-meta"><span class="blog-tag">PropTech</span><span class="blog-date">September 2026 &middot; 14 min read</span></div>
         <h3>PropTech Solutions in 2026: AI Agents, Mobile Apps, Websites &amp; Marketing for Real Estate</h3>
