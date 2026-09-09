@@ -5,7 +5,7 @@ import { HTML } from '@/content/blog-ai-agents-real-estate';
 const TITLE = "AI Agents for Real Estate: What They Actually Do (and What They Can't)";
 const META_TITLE = 'AI Agents for Real Estate';
 const DESCRIPTION =
-  'AI agents qualify leads, book showings and update your CRM in seconds \u2014 unlike chatbots, which only answer. What they do, and what they shouldn't.';
+  'AI agents qualify leads, book showings and update your CRM in seconds \u2014 unlike chatbots, which only answer. What they do, and what they shouldn\'t.';
 const URL = 'https://www.designworldstudio.com/blog-ai-agents-real-estate';
 const IMAGE = 'https://www.designworldstudio.com/media/ai-agents-vs-chatbot.webp';
 
