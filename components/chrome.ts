@@ -186,13 +186,6 @@ export const MOBILE_MENU = `<div id="mobile-menu">
     <li><a data-route="about">About</a></li>
     <li><a data-route="contact">Contact</a></li>
   </ul>
-  <div class="mobile-menu-foot">
-    <div class="mobile-menu-badges">
-      <span class="header-trust-badge"><img src="/media/badges/badge-clutch.png" alt="Clutch" loading="lazy"></span>
-      <span class="header-trust-badge"><img src="/media/badges/badge-bbb.png" alt="BBB Accredited Business" loading="lazy"></span>
-      <span class="header-trust-badge"><img src="/media/badges/badge-trustpilot.png" alt="Trustpilot" loading="lazy"></span>
-    </div>
-  </div>
 </div>`;
 export const TICKER = `<div class="cta-ticker">
   <div class="cta-ticker-track" id="ctaTicker"></div>
@@ -236,13 +229,6 @@ export const FOOTER = `<footer>
     <div class="footer-visual-grid"></div>
   </div>
   <div class="container">
-    <div class="footer-trust">
-      <div class="footer-trust-badges">
-        <a class="footer-trust-badge" href="#" target="_blank" rel="noopener" aria-label="Clutch" data-cursor><img src="/media/badges/badge-clutch.png" alt="Clutch" loading="lazy"></a>
-        <a class="footer-trust-badge" href="#" target="_blank" rel="noopener" aria-label="Better Business Bureau Accredited Business" data-cursor><img src="/media/badges/badge-bbb.png" alt="BBB Accredited Business" loading="lazy"></a>
-        <a class="footer-trust-badge" href="#" target="_blank" rel="noopener" aria-label="Trustpilot" data-cursor><img src="/media/badges/badge-trustpilot.png" alt="Trustpilot &ndash; 5 star rating" loading="lazy"></a>
-      </div>
-    </div>
     <div class="footer-grid">
       <div class="footer-brand">
         <p class="logo" style="font-size:22px;"><img class="logo-mark" src="/media/dws-logo-icon.png" alt="" aria-hidden="true"><span class="logo-text">Design World Studio</span></p>

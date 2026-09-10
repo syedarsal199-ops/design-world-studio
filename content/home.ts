@@ -13,13 +13,6 @@ export const HTML = `
       <a href="/contact" class="btn btn-primary" data-route="contact" data-cursor><span>Start a Project →</span></a>
       <a href="/services" class="btn btn-outline" data-route="services" data-cursor><span>Explore Services</span></a>
     </div>
-    <div class="hero-trust">
-      <div class="hero-trust-badges">
-        <span class="hero-trust-badge"><img src="/media/badges/badge-clutch.png" alt="Clutch" width="195" height="63" loading="lazy"></span>
-        <span class="hero-trust-badge"><img src="/media/badges/badge-bbb.png" alt="BBB Accredited Business" width="225" height="90" loading="lazy"></span>
-        <span class="hero-trust-badge"><img src="/media/badges/badge-trustpilot.png" alt="Trustpilot" width="270" height="148" loading="lazy"></span>
-      </div>
-    </div>
   </div>
   <div class="scroll-cue"><span>Scroll</span><div class="scroll-line"></div></div>
 </section>
