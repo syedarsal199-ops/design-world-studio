@@ -37,8 +37,8 @@ export const HTML = `
         </div>
       </div>
 
-      <div class="res-rig-wrap">
-        <img src="/media/web-responsive-showcase.webp" alt="Responsive website design shown on desktop and mobile, with Lighthouse 100/100, LCP 0.9s and 3.2x conversion lift highlighted" width="1475" height="1067" style="width:100%;height:auto;display:block;border-radius:16px;" loading="lazy" decoding="async">
+      <div class="res-showcase">
+        <img src="/media/web-responsive-showcase.webp" alt="Responsive website design shown on desktop and mobile, with Lighthouse 100/100, LCP 0.9s and 3.2x conversion lift highlighted" width="1475" height="1067" loading="lazy" decoding="async">
       </div>
     </div>
   </div>

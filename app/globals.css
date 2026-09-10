@@ -3152,3 +3152,25 @@
 .dws-popup-form select option{
   background:#12140f; color:var(--bone);
 }
+
+  /* ---------- website-development: responsive showcase image ----------
+     The mockup is a transparent-edged PNG, so instead of sitting in a
+     visible card it dissolves into the page. The glow behind it extends
+     past the image bounds, which is what stops it reading as a pasted-in
+     rectangle. Transform-only float: compositor work, not main thread. */
+  .res-showcase{ position:relative; display:block; }
+  .res-showcase::before{
+    content:''; position:absolute; left:50%; top:54%;
+    width:86%; height:74%; transform:translate(-50%,-50%);
+    border-radius:50%; pointer-events:none; z-index:0;
+    background:radial-gradient(ellipse at center,
+      rgba(78,168,58,.30) 0%, rgba(79,209,255,.12) 45%, rgba(78,168,58,0) 72%);
+    filter:blur(58px);
+  }
+  .res-showcase img{
+    position:relative; z-index:1; width:100%; height:auto; display:block;
+    animation:resFloat 7.5s ease-in-out infinite;
+  }
+  @keyframes resFloat{ 0%,100%{ transform:translateY(0); } 50%{ transform:translateY(-12px); } }
+  @media(prefers-reduced-motion: reduce){ .res-showcase img{ animation:none; } }
+  @media(max-width:640px){ .res-showcase::before{ filter:blur(38px); } }
