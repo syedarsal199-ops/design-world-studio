@@ -2885,9 +2885,9 @@
   }
   .footer-trust-badge img{ height:100%; width:auto; object-fit:contain; display:block; }
   .footer-trust-badge:hover{ transform:translateY(-2px); }
-  @media(max-width:639px){ .footer-trust{ padding-top:calc(var(--fbh) + 32px); } .footer-trust-badge{ height:34px; padding:6px 12px; } }
+  @media(max-width:639px){ .footer-grid{ padding-top:calc(var(--fbh) + 32px); } }
 
-  .footer-grid{ display:grid; grid-template-columns:minmax(0,1fr); gap:48px; padding:32px 0 64px; position:relative; z-index:2; }
+  .footer-grid{ display:grid; grid-template-columns:minmax(0,1fr); gap:48px; padding:calc(var(--fbh) + 40px) 0 64px; position:relative; z-index:2; }
   @media(min-width:1024px){ .footer-grid{ grid-template-columns:1.25fr .85fr .85fr .85fr 1.15fr; gap:40px; } }
   @media(min-width:1024px) and (max-width:1279px){ .footer-grid{ grid-template-columns:1fr 1fr 1fr; gap:40px 32px; } .footer-brand{ grid-column:1 / -1; } }
   .footer-brand p{ margin-top:20px; max-width:320px; font-size:14px; line-height:1.6; color:rgba(244,242,237,.5); }
