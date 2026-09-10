@@ -37,41 +37,8 @@ export const HTML = `
         </div>
       </div>
 
-      <div class="res-rig-wrap" data-res-rig>
-        <div class="res-chip c1"><span class="dot"></span>Lighthouse 100 / 100</div>
-        <div class="res-chip c2"><span class="dot"></span>LCP 0.9s</div>
-        <div class="res-chip c3"><span class="dot"></span>3.2&times; conversion lift</div>
-        <div class="res-rig">
-          <div class="res-monitor">
-            <div class="res-screen">
-              <img class="res-screen-img" src="/media/8e5e84f83d4d.webp" alt="" aria-hidden="true">
-              <div class="res-screen-scan"></div>
-              <div class="res-screen-ui">
-                <div class="res-topbar">
-                  <span class="res-brandmark">STUDIO&nbsp;/&nbsp;WEB</span>
-                  <span class="res-navdots"><i></i><i></i><i></i></span>
-                </div>
-                <div class="res-searchbar">Design systems, motion, and conversion<b>Explore</b></div>
-                <div class="res-cardrow">
-                  <div class="res-lcard"><div class="res-lcard-img"></div><div class="res-lcard-body"><b>100</b><i></i><i></i></div></div>
-                  <div class="res-lcard"><div class="res-lcard-img"></div><div class="res-lcard-body"><b>0.9s</b><i></i><i></i></div></div>
-                  <div class="res-lcard"><div class="res-lcard-img"></div><div class="res-lcard-body"><b>3.2&times;</b><i></i><i></i></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="res-phone">
-            <div class="res-phone-screen">
-              <img src="/media/8e5e84f83d4d.webp" alt="" aria-hidden="true">
-              <span class="res-phone-notch"></span>
-              <div class="res-phone-ui">
-                <span class="res-phone-pill">Responsive</span>
-                <span class="res-phone-pill">WCAG 2.2 AA</span>
-                <div class="res-phone-stat"><b>98</b><small>Mobile score</small></div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="res-rig-wrap">
+        <img src="/media/web-responsive-showcase.webp" alt="Responsive website design shown on desktop and mobile, with Lighthouse 100/100, LCP 0.9s and 3.2x conversion lift highlighted" width="1475" height="1067" style="width:100%;height:auto;display:block;border-radius:16px;" loading="lazy" decoding="async">
       </div>
     </div>
   </div>
