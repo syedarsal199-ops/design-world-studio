@@ -16,6 +16,12 @@ export const HTML = `
 <section class="bg-alt">
   <div class="container">
     <div class="blog-grid" id="blogGrid">
+      <a class="blog-card reveal" href="/blog-real-estate-crm-development">
+        <div class="blog-meta"><span class="blog-tag">CRM Development</span><span class="blog-date">September 2026 &middot; 12 min read</span></div>
+        <h3>Real Estate CRM Development: Build, Buy, or Integrate in 2026</h3>
+        <p>55% of CRM projects miss the objectives they were approved for &mdash; and they fail at adoption, not technology. How to tell which of the three paths your brokerage actually needs, with real 2026 cost ranges.</p>
+        <span class="blog-read">Read article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+      </a>
       <a class="blog-card reveal" href="/blog-ai-agents-real-estate">
         <div class="blog-meta"><span class="blog-tag">AI Agents</span><span class="blog-date">September 2026 &middot; 11 min read</span></div>
         <h3>AI Agents for Real Estate: What They Actually Do (and What They Can&rsquo;t)</h3>
