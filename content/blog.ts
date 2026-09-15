@@ -39,7 +39,7 @@ export const HTML = `
 @media(prefers-reduced-motion:reduce){.blog-catpill{transition:none;}.blog-catpill:hover{transform:none;}}
 </style>
 <section class="bg-alt"><div class="container">
-<nav class="blog-catnav" aria-label="Blog categories"><div class="blog-catnav-inner"><a class="blog-catpill" href="#real-estate-crm">Real Estate CRM<span class="cnt">1</span></a><a class="blog-catpill" href="#proptech">PropTech<span class="cnt">3</span></a><a class="blog-catpill" href="#website-development">Website Development<span class="cnt">2</span></a><a class="blog-catpill" href="#mobile-app-development">Mobile Apps<span class="cnt">2</span></a><a class="blog-catpill" href="#ai-development">AI &amp; Software<span class="cnt">3</span></a></div></nav>
+<nav class="blog-catnav" aria-label="Blog categories"><div class="blog-catnav-inner"><a class="blog-catpill" href="#real-estate-crm">Real Estate CRM<span class="cnt">1</span></a><a class="blog-catpill" href="#proptech">PropTech<span class="cnt">3</span></a><a class="blog-catpill" href="#website-development">Website Development<span class="cnt">2</span></a><a class="blog-catpill" href="#mobile-app-development">Mobile Apps<span class="cnt">3</span></a><a class="blog-catpill" href="#ai-development">AI &amp; Software<span class="cnt">3</span></a></div></nav>
 <div class="blog-section" id="real-estate-crm">
 <div class="blog-sec-head"><h2>Real Estate CRM Development</h2><span class="blog-sec-rule"></span></div>
 <p class="blog-sec-blurb">Build, buy or integrate — and what a CRM has to do before agents will actually use it.</p>
@@ -111,6 +111,12 @@ export const HTML = `
 <p class="blog-sec-blurb">What apps really cost, and how to pick a stack you will not have to rewrite.</p>
 <div class="blog-grid">
 
+      <a class="blog-card reveal" href="/blog-choose-mobile-app-development-company">
+        <div class="blog-meta"><span class="blog-tag">Choosing a Partner</span><span class="blog-date">September 2026 &middot; 13 min read</span></div>
+        <h3>How to Choose a Mobile App Development Company in the USA</h3>
+        <p>Most &ldquo;top 10&rdquo; lists are written by agencies who put themselves at number one. The five questions that actually separate firms, real US vs offshore rates, and the red flags worth walking away from.</p>
+        <span class="blog-read">Read article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+      </a>
       <a class="blog-card reveal" href="/blog-mobile-app-development-cost-2026">
         <div class="blog-meta"><span class="blog-tag">Mobile App Development</span><span class="blog-date">September 2026 &middot; 8 min read</span></div>
         <h3>Mobile App Development Cost in 2026: What You&rsquo;ll Actually Pay</h3>
