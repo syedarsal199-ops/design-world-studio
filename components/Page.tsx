@@ -34,6 +34,7 @@ const NAMES: Record<string, string> = {
   'blog-real-estate-website-development-2026': 'Real Estate Website Development',
   'blog-choosing-mobile-app-approach': 'Choosing Your Mobile Stack',
   'blog-choose-mobile-app-development-company': 'Choosing an App Development Company',
+  'blog-mobile-app-development-nyc-california': 'App Development for NY & CA',
   'blog-mvp-to-scale-architecture': 'From MVP to Scale',
   'blog-seo-in-ai-search-era': 'SEO in the Age of AI Search',
   'blog-ai-native-development': 'AI-Native Development',

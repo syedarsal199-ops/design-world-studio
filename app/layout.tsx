@@ -76,7 +76,12 @@ const ORG_SCHEMA = {
     postalCode: '06820',
     addressCountry: 'US',
   },
-  areaServed: 'US',
+  areaServed: [
+    { '@type': 'Country', name: 'United States' },
+    { '@type': 'State', name: 'New York' },
+    { '@type': 'State', name: 'California' },
+    { '@type': 'State', name: 'Connecticut' },
+  ],
   priceRange: '$$',
   makesOffer: [
     'Website Development', 'Mobile App Development', 'Web App Development',
