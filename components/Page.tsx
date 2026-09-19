@@ -28,6 +28,7 @@ const NAMES: Record<string, string> = {
   'work-unbroken-investing': 'Unbroken Investing',
   'blog-proptech-solutions-2026': 'PropTech Solutions',
   'blog-ai-agents-real-estate': 'AI Agents for Real Estate',
+  'blog-ai-voice-agents-real-estate': 'AI Voice Agents for Real Estate',
   'blog-real-estate-crm-development': 'Real Estate CRM Development',
   'blog-mobile-app-development-cost-2026': 'Mobile App Development Cost',
   'blog-real-estate-mobile-app-2026': 'Real Estate Mobile App Development',
