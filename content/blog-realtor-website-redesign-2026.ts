@@ -1,0 +1,65 @@
+export const HTML = `<section class="page-hero" style="padding-bottom:48px;"><div class="grid-overlay"></div><div class="container page-hero-inner"><div class="breadcrumb"><a href="/" data-route="home">Home</a><span>/</span><a href="/blog" data-route="blog">Blog</a><span>/</span><span>Website Redesign</span></div><span class="kicker">Website Development</span><h1 class="page-title"><span class="reveal-line"><span>What Realtors Should Know Before Redesigning Their Website in 2026</span></span></h1><div class="article-meta"><span class="blog-date">Sep 2026 · 9 min read</span></div></div></section><section class="bg-alt"><div class="container"><div class="article-body"><p class="article-lead"><b>Most real estate agents don't think about their website until it embarrasses them.</b> A client mentions it looks outdated, a competitor's site pops up first in a local search, or a lead complains they couldn't find a way to actually contact the agent. At that point, most agents do what feels fastest: hire whoever's available, hand over a logo and a headshot, and hope for the best.</p>
+
+<p>That approach usually produces a website that looks fine in a screenshot and does almost nothing for the business behind it. Here's what actually matters before you redesign &mdash; and what most agents get wrong the first time around.</p>
+
+<h2 id="job">Your website's job isn't to look good. It's to convert.</h2>
+
+<p>A beautiful website that doesn't generate leads is a liability, not an asset. Before any design decision gets made, you should be able to answer one question clearly: <b>what do I want a visitor to do in the first 15 seconds on my site?</b> For most agents, the honest answer is one of three things &mdash; search listings, request a valuation, or book a call. Every design choice, from your homepage layout to your navigation menu, should funnel toward that single action rather than trying to do everything at once.</p>
+
+<p>The agents who get the best return on a website investment are the ones who resist the urge to cram every service, every award, and every listing onto the homepage. Clarity converts. Clutter doesn't.</p>
+
+<h2 id="idx">IDX integration is not optional anymore</h2>
+
+<p>If your new site doesn't have a working, fast, mobile-friendly IDX or MLS feed, you're not competing &mdash; you're conceding traffic to Zillow, Realtor.com, and every other agent who does have one. But IDX integration quality varies wildly. A slow-loading, clunky IDX plugin can hurt your Google rankings as much as it helps your listings page, because search engines penalize slow, poorly optimized pages regardless of the content on them.</p>
+
+<p>Before committing to a platform, ask specifically how listings will load, whether they're server-side rendered or client-side (this affects both speed and SEO), and how often the feed syncs. These are the details that separate a website that generates organic search traffic from one that just sits there looking presentable.</p>
+
+<h2 id="mobile">Mobile experience is the real test, not desktop</h2>
+
+<p>The majority of home searches now start, and often finish, on a phone. If your new website is designed and approved on a desktop monitor and only checked on mobile as an afterthought, you're optimizing for the wrong device. Buttons that are easy to tap, forms that don't require pinching and zooming, and load times under three seconds on a phone connection are not nice-to-haves &mdash; they're the baseline for a site that doesn't lose visitors before they ever see your listings.</p>
+
+<h2 id="ai">AI is changing what "custom" means for real estate sites</h2>
+
+<p>This is the part most agents haven't caught up on yet. A few years ago, "custom website" meant a unique design and maybe a blog. Today, the studios building genuinely modern real estate platforms are integrating AI in ways that directly affect lead quality and response time.</p>
+
+<ul><li><b>AI chatbots trained specifically on a brokerage's own listings and FAQs</b> can answer a visitor's questions at 11pm on a Saturday &mdash; exactly when a lot of serious home searchers are actually browsing &mdash; without an agent lifting a finger. The difference between a generic chatbot and one trained on your actual inventory and voice is significant; visitors can tell within a few exchanges whether they're talking to something useful or something that's just going to ask for their email and disappear.</li><li><b>Automated lead routing and follow-up sequences</b>, built with actual workflow logic rather than a basic autoresponder, mean a lead who fills out a form on your site at midnight gets a relevant, personalized response before a human ever sees the notification. Speed to lead is one of the most well-documented factors in real estate conversion, and this is the first year that kind of automation has become realistically affordable for individual agents and small teams, not just big brokerages with dedicated dev budgets.</li></ul>
+
+<p>None of this replaces the agent. It replaces the delay between a lead showing interest and getting a useful response &mdash; which is usually where deals are lost.</p>
+
+<h2 id="questions">What to ask a web design company before you sign anything</h2>
+
+<p>If you're vetting agencies or freelancers for a redesign, a few questions will tell you more than any portfolio:</p>
+
+<ul><li><b>Who owns the website and the code once it's built?</b> Some agencies build on proprietary, locked platforms that make it expensive or impossible to leave later. Make sure you own your domain, your content, and ideally your codebase or a clear export path.</li><li><b>What happens after launch?</b> A website is not a one-time purchase. Search rankings, plugin updates, security patches, and IDX feed maintenance all require ongoing attention. Ask specifically what support looks like three months and twelve months after launch, and what it costs.</li><li><b>Can they show real estate-specific work, not just general small business sites?</b> Real estate has specific technical needs &mdash; IDX/MLS compliance, listing display requirements, lead capture tied to CRMs agents already use. A generalist web designer without real estate experience will likely underestimate these requirements.</li></ul>
+
+<h2 id="bottom-line">The bottom line</h2>
+
+<p>A website redesign is one of the few marketing investments an agent makes that compounds over time if done correctly &mdash; every listing, every blog post, and every lead capture form adds to a foundation that keeps working long after the invoice is paid. But it only compounds if the foundation is built around conversion, speed, and thoughtful use of automation &mdash; not just a fresh coat of visual paint.</p>
+
+<p>Before your next redesign, spend more time on the questions above than on choosing a color palette. The color palette is the part everyone notices. The IDX speed, the mobile experience, and the lead response time are the parts that actually determine whether the new site earns its cost back.</p>
+
+<h2 id="faq">Frequently asked questions</h2>
+
+<h3>What's the most important thing to fix in a real estate website redesign?</h3>
+<p>Whatever is standing between a visitor and the one action you want them to take &mdash; searching listings, requesting a valuation, or booking a call. A site that clearly funnels toward a single action outperforms one that tries to showcase everything at once.</p>
+
+<h3>Does IDX integration really affect SEO?</h3>
+<p>Yes. A slow or poorly built IDX feed can drag down page speed site-wide, and search engines penalize slow pages regardless of how good the listing content is. Whether listings are server-side or client-side rendered, and how often the feed syncs, both matter for rankings.</p>
+
+<h3>Should I design for mobile first or desktop first?</h3>
+<p>Mobile first. The majority of home searches now happen on a phone, so a site approved on a desktop monitor and only spot-checked on mobile is being optimized for the wrong device.</p>
+
+<h3>Do I need an AI chatbot on my real estate website?</h3>
+<p>Not strictly, but a chatbot trained on your actual listings and FAQs can capture serious after-hours inquiries that would otherwise go unanswered until morning. A generic, untrained chatbot is usually worse than none at all &mdash; visitors notice quickly when it's not actually useful.</p>
+
+<h3>Who should own the code after my website is built?</h3>
+<p>You should. Confirm before signing whether you'll own your domain, your content, and your codebase (or have a clear export path) &mdash; some agencies build on locked platforms that make switching providers later expensive or impossible.</p>
+
+<h3>What should I ask about support after launch?</h3>
+<p>Ask specifically what happens three months and twelve months after launch, and what it costs. A website needs ongoing attention for search rankings, plugin updates, security patches, and IDX feed maintenance &mdash; it isn't a one-time purchase.</p>
+
+<h2 id="working-with-us">Building this with Design World Studio</h2>
+
+<p>We build real estate websites with fast, server-rendered IDX feeds, mobile-first layouts, and AI chatbots and lead routing trained on a brokerage's own inventory &mdash; not bolted-on plugins. If you're weighing a redesign, send us your current site and we'll tell you honestly what's actually costing you leads.</p>
+
+</div><div class="related-row reveal" style="margin-top:56px;"><a href="/blog-real-estate-website-development-2026" class="related-pill" data-route="blog-real-estate-website-development-2026" data-cursor>Real Estate Website Development Guide →</a><a href="/website-development" class="related-pill" data-route="website-development" data-cursor>Website Development →</a><a href="/blog-ai-agents-real-estate" class="related-pill" data-route="blog-ai-agents-real-estate" data-cursor>AI Agents for Real Estate →</a><a href="/seo" class="related-pill" data-route="seo" data-cursor>SEO Services →</a><a href="/blog" class="related-pill" data-route="blog" data-cursor>Back to Blog →</a></div></div></section><section class="final-cta submit-cta bg-alt"><div class="container"><div class="submit-cta-shell"><div class="submit-cta-grid"><div class="submit-cta-left reveal"><a class="submit-cta-mail" href="mailto:hello@designworldstudio.com" data-cursor><span class="submit-cta-mail-ico">&#9993;</span>hello@designworldstudio.com</a><span class="kicker">Let's Build</span><h2>Is your website actually converting?</h2><p>Send us your current site and we'll tell you honestly what's costing you leads.</p><div class="submit-cta-socials"><a href="#" aria-label="X (Twitter)" data-cursor><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7.6 8.7L23.3 22h-6.9l-5.4-6.6L4.8 22H1.6l8.1-9.3L1 2h7l4.9 6.1L18.9 2Zm-1.2 18h1.9L7.4 3.9H5.4L17.7 20Z"/></svg></a><a href="https://www.instagram.com/designworldstudi0" target="_blank" rel="noopener noreferrer" aria-label="Instagram" data-cursor><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a><a href="https://web.facebook.com/profile.php?id=61556130037043" target="_blank" rel="noopener noreferrer" aria-label="Facebook" data-cursor><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.51 1.49-3.9 3.77-3.9 1.09 0 2.23.2 2.23.2v2.46h-1.26c-1.24 0-1.63.78-1.63 1.57v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94Z"/></svg></a><a href="#" aria-label="LinkedIn" data-cursor><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.94 5a1.94 1.94 0 1 1 0-3.88 1.94 1.94 0 0 1 0 3.88ZM5.1 8.5h3.68V21H5.1V8.5Zm6.36 0h3.53v1.7h.05c.49-.93 1.7-1.92 3.5-1.92 3.75 0 4.44 2.47 4.44 5.68V21h-3.68v-5.5c0-1.31-.02-3-1.83-3-1.83 0-2.11 1.43-2.11 2.9V21h-3.68V8.5Z"/></svg></a></div></div><div class="submit-cta-right reveal"><h3>Which of our services can support you?</h3><p class="submit-cta-sublabel">I'm looking for:</p><div class="submit-pill-group"><button type="button" class="submit-pill active" data-service="Web Development">Web</button><button type="button" class="submit-pill" data-service="App Development">App</button><button type="button" class="submit-pill" data-service="AI Automation">AI</button><button type="button" class="submit-pill" data-service="Software Development">Software</button></div><div class="submit-cta-fields"><input type="text" class="submit-input" placeholder="Full Name" data-field="name"><input type="email" class="submit-input" placeholder="Email Address" data-field="email"><input type="text" class="submit-input" placeholder="Tell us briefly what you need" data-field="brief"></div><button type="button" class="btn btn-primary submit-cta-btn" data-cursor><span>Start a Project &rarr;</span></button><p class="submit-cta-note">We usually reply within one business day.</p></div></div></div></div></section>`;

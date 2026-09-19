@@ -33,6 +33,7 @@ const NAMES: Record<string, string> = {
   'blog-mobile-app-development-cost-2026': 'Mobile App Development Cost',
   'blog-real-estate-mobile-app-2026': 'Real Estate Mobile App Development',
   'blog-real-estate-website-development-2026': 'Real Estate Website Development',
+  'blog-realtor-website-redesign-2026': 'Realtor Website Redesign',
   'blog-choosing-mobile-app-approach': 'Choosing Your Mobile Stack',
   'blog-choose-mobile-app-development-company': 'Choosing an App Development Company',
   'blog-mobile-app-development-nyc-california': 'App Development for NY & CA',

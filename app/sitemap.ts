@@ -17,6 +17,7 @@ const SERVICE_PAGES = [
 const CONTENT_PAGES = [
   'process', 'blog',
   'blog-real-estate-website-development-2026',
+  'blog-realtor-website-redesign-2026',
   'blog-real-estate-crm-development',
   'blog-ai-agents-real-estate',
   'blog-ai-voice-agents-real-estate',
