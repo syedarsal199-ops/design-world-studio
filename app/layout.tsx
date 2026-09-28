@@ -8,6 +8,7 @@ import ChatWidget from '@/components/ChatWidget';
 import LeadPopup from '@/components/LeadPopup';
 
 const GA_MEASUREMENT_ID = 'G-JPH9SVSJPS';
+const APOLLO_APP_ID = '6a1ce06b4d1b690020236b97';
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ['latin'],
@@ -120,6 +121,22 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', '${GA_MEASUREMENT_ID}');
+          `}
+        </Script>
+        <Script id="apollo-visitor-tracker" strategy="afterInteractive">
+          {`
+            function initApollo(){
+              var n=Math.random().toString(36).substring(7),
+                  o=document.createElement("script");
+              o.src="https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache="+n;
+              o.async=!0;
+              o.defer=!0;
+              o.onload=function(){
+                window.trackingFunctions.onLoad({appId:"${APOLLO_APP_ID}"});
+              };
+              document.head.appendChild(o);
+            }
+            initApollo();
           `}
         </Script>
       </body>
