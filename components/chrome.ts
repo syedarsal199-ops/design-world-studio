@@ -297,6 +297,7 @@ export const FOOTER = `<footer>
         <a href="mailto:hello@designworldstudio.com">hello@designworldstudio.com</a>
         <a href="#">Privacy</a>
         <a href="#">Terms</a>
+        <a href="https://www.designrush.com/agency/website-design-development/us" target="_blank" rel="noopener noreferrer">verified by Designrush</a>
       </div>
     </div>
   </div>
