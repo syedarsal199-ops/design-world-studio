@@ -30,6 +30,7 @@ const NAMES: Record<string, string> = {
   'blog-ai-agents-real-estate': 'AI Agents for Real Estate',
   'blog-ai-voice-agents-real-estate': 'AI Voice Agents for Real Estate',
   'blog-real-estate-crm-development': 'Real Estate CRM Development',
+  'blog-real-estate-crm-comparison-2026': 'Real Estate CRM Comparison',
   'blog-mobile-app-development-cost-2026': 'Mobile App Development Cost',
   'blog-real-estate-mobile-app-2026': 'Real Estate Mobile App Development',
   'blog-real-estate-website-development-2026': 'Real Estate Website Development',
