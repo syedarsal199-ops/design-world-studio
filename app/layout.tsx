@@ -6,6 +6,7 @@ import SiteChrome from '@/components/SiteChrome';
 import SiteRuntime from '@/components/SiteRuntime';
 import ChatWidget from '@/components/ChatWidget';
 import LeadPopup from '@/components/LeadPopup';
+import VisitorPing from '@/components/VisitorPing';
 
 const GA_MEASUREMENT_ID = 'G-JPH9SVSJPS';
 const APOLLO_APP_ID = '6a1ce06b4d1b690020236b97';
@@ -111,6 +112,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <SiteRuntime />
         <ChatWidget />
         <LeadPopup />
+        <VisitorPing />
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
           strategy="afterInteractive"
