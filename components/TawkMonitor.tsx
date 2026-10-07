@@ -11,15 +11,16 @@ import { useEffect } from 'react';
  * who is on the site right now, their country/city, which page they're reading —
  * plus new-visitor push notifications in the Tawk dashboard and mobile apps.
  *
- * Set NEXT_PUBLIC_TAWK_SRC in Vercel to your embed URL, which looks like:
- *   https://embed.tawk.to/<propertyId>/<widgetId>
- * Leave it unset and this component does nothing at all.
+ * The embed id below is public by design - it ships in the page source of every
+ * site running Tawk - so it lives in the code like the GA4 and Apollo ids above.
+ * NEXT_PUBLIC_TAWK_SRC overrides it if you ever need a different property.
  *
  * To show the chat bubble later: delete the hideWidget() call below and the
  * `iframe[title="chat widget"]` rule in globals.css.
  */
 
-const TAWK_SRC = process.env.NEXT_PUBLIC_TAWK_SRC;
+const TAWK_DEFAULT_SRC = 'https://embed.tawk.to/6ac6983bea955334bb041fc7/1k4bs5abp';
+const TAWK_SRC = process.env.NEXT_PUBLIC_TAWK_SRC || TAWK_DEFAULT_SRC;
 const SCRIPT_ID = 'tawk-monitor';
 
 export default function TawkMonitor() {
