@@ -7,6 +7,7 @@ import SiteRuntime from '@/components/SiteRuntime';
 import ChatWidget from '@/components/ChatWidget';
 import LeadPopup from '@/components/LeadPopup';
 import VisitorPing from '@/components/VisitorPing';
+import TawkMonitor from '@/components/TawkMonitor';
 
 const GA_MEASUREMENT_ID = 'G-JPH9SVSJPS';
 const APOLLO_APP_ID = '6a1ce06b4d1b690020236b97';
@@ -122,6 +123,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <ChatWidget />
         <LeadPopup />
         <VisitorPing />
+        <TawkMonitor />
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
           strategy="afterInteractive"

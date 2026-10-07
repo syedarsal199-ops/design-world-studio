@@ -3030,6 +3030,10 @@
   @keyframes globalBgDrift{ 0%{ transform:scale(1.08) translate(0,0); } 50%{ transform:scale(1.14) translate(-0.8%,0.5%); } 100%{ transform:scale(1.08) translate(0,0); } }
   @media (prefers-reduced-motion: reduce){ #global-bg img{ animation:none; transform:scale(1.08); } }
 
+  /* Tawk.to runs for visitor monitoring only - keep its launcher hidden so it
+     doesn't collide with .dws-chat-fab. Remove this to enable Tawk chat. */
+  iframe[title="chat widget"]{ display:none !important; }
+
   /* ---- AI chat widget ---- */
   .dws-chat{ position:fixed; right:20px; bottom:20px; z-index:70; display:flex; flex-direction:column; align-items:flex-end; gap:14px; }
   .dws-chat-fab{
