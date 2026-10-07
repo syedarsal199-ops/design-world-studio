@@ -291,6 +291,14 @@ export const FOOTER = `<footer>
       </div>
     </div>
     <div class="hairline"></div>
+    <div class="footer-listed">
+      <span class="footer-listed-label">Listed on</span>
+      <a href="https://clutch.co/profile/design-world-studio" target="_blank" rel="noopener noreferrer" data-cursor>Clutch</a>
+      <a href="https://www.designrush.com/agency/profile/design-world-studio" target="_blank" rel="noopener noreferrer" data-cursor>DesignRush</a>
+      <a href="https://www.crunchbase.com/organization/design-world-studio" target="_blank" rel="noopener noreferrer" data-cursor>Crunchbase</a>
+      <a href="https://www.goodfirms.co/company/design-world-studio" target="_blank" rel="noopener noreferrer" data-cursor>GoodFirms</a>
+      <a href="https://techbehemoths.com/company/design-world-studio" target="_blank" rel="noopener noreferrer" data-cursor>TechBehemoths</a>
+    </div>
     <div class="footer-bottom">
       <p id="year"></p>
       <div class="footer-bottom-links">

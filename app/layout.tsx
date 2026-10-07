@@ -84,6 +84,15 @@ const ORG_SCHEMA = {
     { '@type': 'State', name: 'California' },
     { '@type': 'State', name: 'Connecticut' },
   ],
+  sameAs: [
+    'https://clutch.co/profile/design-world-studio',
+    'https://www.designrush.com/agency/profile/design-world-studio',
+    'https://www.crunchbase.com/organization/design-world-studio',
+    'https://www.goodfirms.co/company/design-world-studio',
+    'https://techbehemoths.com/company/design-world-studio',
+    'https://www.instagram.com/designworldstudi0',
+    'https://web.facebook.com/profile.php?id=61556130037043',
+  ],
   priceRange: '$$',
   makesOffer: [
     'Website Development', 'Mobile App Development', 'Web App Development',
