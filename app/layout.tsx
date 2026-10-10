@@ -41,7 +41,15 @@ export const metadata: Metadata = {
     'custom software development', 'MVP development', 'web app development',
   ],
   icons: {
-    icon: [{ url: '/favicon-32.png', type: 'image/png', sizes: '32x32' }],
+    // Google recommends a favicon larger than 48x48 for search results; the 32px
+    // one alone was below that, so the bigger sizes lead here.
+    icon: [
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/favicon-192.png', type: 'image/png', sizes: '192x192' },
+      { url: '/favicon-96.png', type: 'image/png', sizes: '96x96' },
+      { url: '/favicon-32.png', type: 'image/png', sizes: '32x32' },
+    ],
+    shortcut: [{ url: '/favicon.ico' }],
     apple: [{ url: '/app-icon-180.png', sizes: '180x180' }],
   },
   alternates: { canonical: '/' },
