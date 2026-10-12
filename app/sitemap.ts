@@ -19,6 +19,7 @@ const CONTENT_PAGES = [
   'blog-real-estate-website-development-2026',
   'blog-realtor-website-redesign-2026',
   'blog-luxury-presence-vs-custom-website',
+  'blog-real-estate-website-platform-comparison-2026',
   'blog-real-estate-crm-development',
   'blog-real-estate-crm-comparison-2026',
   'blog-ai-agents-real-estate',
