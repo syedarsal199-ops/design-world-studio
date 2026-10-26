@@ -26,6 +26,8 @@ const CONTENT_PAGES = [
   'blog-ai-voice-agents-real-estate',
   'blog-ai-transaction-coordination-real-estate',
   'blog-ai-lead-scoring-real-estate',
+  'blog-ai-marketing-automation-real-estate',
+  'blog-ai-home-valuation-tools-2026',
   'blog-proptech-solutions-2026',
   'blog-mobile-app-development-nyc-california',
   'blog-choose-mobile-app-development-company',

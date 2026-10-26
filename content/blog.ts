@@ -39,7 +39,7 @@ export const HTML = `
 @media(prefers-reduced-motion:reduce){.blog-catpill{transition:none;}.blog-catpill:hover{transform:none;}}
 </style>
 <section class="bg-alt"><div class="container">
-<nav class="blog-catnav" aria-label="Blog categories"><div class="blog-catnav-inner"><a class="blog-catpill" href="#real-estate-crm">Real Estate CRM<span class="cnt">2</span></a><a class="blog-catpill" href="#proptech">PropTech<span class="cnt">6</span></a><a class="blog-catpill" href="#website-development">Website Development<span class="cnt">5</span></a><a class="blog-catpill" href="#mobile-app-development">Mobile Apps<span class="cnt">4</span></a><a class="blog-catpill" href="#ai-development">AI &amp; Software<span class="cnt">3</span></a></div></nav>
+<nav class="blog-catnav" aria-label="Blog categories"><div class="blog-catnav-inner"><a class="blog-catpill" href="#real-estate-crm">Real Estate CRM<span class="cnt">2</span></a><a class="blog-catpill" href="#proptech">PropTech<span class="cnt">8</span></a><a class="blog-catpill" href="#website-development">Website Development<span class="cnt">5</span></a><a class="blog-catpill" href="#mobile-app-development">Mobile Apps<span class="cnt">4</span></a><a class="blog-catpill" href="#ai-development">AI &amp; Software<span class="cnt">3</span></a></div></nav>
 <div class="blog-section" id="real-estate-crm">
 <div class="blog-sec-head"><h2>Real Estate CRM Development</h2><span class="blog-sec-rule"></span></div>
 <p class="blog-sec-blurb">Build, buy or integrate — and what a CRM has to do before agents will actually use it.</p>
@@ -99,6 +99,20 @@ export const HTML = `
         <div class="blog-meta"><span class="blog-tag">AI Lead Scoring</span><span class="blog-date">October 2026 &middot; 11 min read</span></div>
         <h3>AI Lead Scoring for Real Estate: How It Works and What It&rsquo;s Worth in 2026</h3>
         <p>41% of top brokerages never respond to a web lead at all. What AI lead scoring actually tracks, real 2026 pricing from Structurely and Ylopo, and whether it beats the scoring your CRM already has built in.</p>
+        <span class="blog-read">Read article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+      </a>
+
+      <a class="blog-card reveal" href="/blog-ai-marketing-automation-real-estate">
+        <div class="blog-meta"><span class="blog-tag">AI Marketing Automation</span><span class="blog-date">October 2026 &middot; 11 min read</span></div>
+        <h3>AI Marketing Automation for Real Estate: Email, SMS &amp; the Nurture Sequence That Actually Converts</h3>
+        <p>Only 16% of agents use any marketing automation at all. Real 2026 data on email vs. SMS response rates, what AI nurture tools from Real Geeks and Lofty actually cost, and how to build a sequence that doesn&rsquo;t go cold.</p>
+        <span class="blog-read">Read article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+      </a>
+
+      <a class="blog-card reveal" href="/blog-ai-home-valuation-tools-2026">
+        <div class="blog-meta"><span class="blog-tag">AI Valuation</span><span class="blog-date">October 2026 &middot; 11 min read</span></div>
+        <h3>AI Home Valuation Tools for Real Estate Agents in 2026: What&rsquo;s Accurate, What&rsquo;s Hype</h3>
+        <p>Zestimate and Redfin Estimate miss by 7%+ the moment a home goes off-market. Real 2026 accuracy data, HouseCanary and RPR pricing, and which AI valuation tool actually fits your listings.</p>
         <span class="blog-read">Read article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
       </a>
 
