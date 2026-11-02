@@ -39,7 +39,7 @@ export const HTML = `
 @media(prefers-reduced-motion:reduce){.blog-catpill{transition:none;}.blog-catpill:hover{transform:none;}}
 </style>
 <section class="bg-alt"><div class="container">
-<nav class="blog-catnav" aria-label="Blog categories"><div class="blog-catnav-inner"><a class="blog-catpill" href="#real-estate-crm">Real Estate CRM<span class="cnt">2</span></a><a class="blog-catpill" href="#proptech">PropTech<span class="cnt">8</span></a><a class="blog-catpill" href="#website-development">Website Development<span class="cnt">5</span></a><a class="blog-catpill" href="#mobile-app-development">Mobile Apps<span class="cnt">4</span></a><a class="blog-catpill" href="#ai-development">AI &amp; Software<span class="cnt">3</span></a></div></nav>
+<nav class="blog-catnav" aria-label="Blog categories"><div class="blog-catnav-inner"><a class="blog-catpill" href="#real-estate-crm">Real Estate CRM<span class="cnt">2</span></a><a class="blog-catpill" href="#proptech">PropTech<span class="cnt">9</span></a><a class="blog-catpill" href="#website-development">Website Development<span class="cnt">5</span></a><a class="blog-catpill" href="#mobile-app-development">Mobile Apps<span class="cnt">4</span></a><a class="blog-catpill" href="#ai-development">AI &amp; Software<span class="cnt">3</span></a></div></nav>
 <div class="blog-section" id="real-estate-crm">
 <div class="blog-sec-head"><h2>Real Estate CRM Development</h2><span class="blog-sec-rule"></span></div>
 <p class="blog-sec-blurb">Build, buy or integrate — and what a CRM has to do before agents will actually use it.</p>
@@ -120,6 +120,13 @@ export const HTML = `
         <div class="blog-meta"><span class="blog-tag">Mobile App Development</span><span class="blog-date">September 2026 · 9 min read</span></div>
         <h3>Real Estate Mobile App Development in 2026: The Complete Guide for US Agencies</h3>
         <p>Must-have features, realistic costs, and how to choose a development partner &mdash; everything US real estate agencies need to know before building a mobile app in 2026.</p>
+        <span class="blog-read">Read article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+      </a>
+
+      <a class="blog-card reveal" href="/blog-ai-property-management-software-2026">
+        <div class="blog-meta"><span class="blog-tag">Property Management</span><span class="blog-date">November 2026 &middot; 11 min read</span></div>
+        <h3>AI Property Management Software in 2026: What It Actually Automates (and What a Landlord Still Has to Do)</h3>
+        <p>AI adopters in property management are projecting 31% portfolio growth for 2026 versus 12% for everyone else. Real AppFolio, Buildium and Rentvine pricing, and the one workflow with the fastest payback.</p>
         <span class="blog-read">Read article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
       </a>
 

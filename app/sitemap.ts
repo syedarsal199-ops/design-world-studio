@@ -29,6 +29,7 @@ const CONTENT_PAGES = [
   'blog-ai-marketing-automation-real-estate',
   'blog-ai-home-valuation-tools-2026',
   'blog-proptech-solutions-2026',
+  'blog-ai-property-management-software-2026',
   'blog-mobile-app-development-nyc-california',
   'blog-choose-mobile-app-development-company',
   'blog-mobile-app-development-cost-2026',
