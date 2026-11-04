@@ -3,20 +3,16 @@
 import { useEffect } from 'react';
 
 /**
- * Tawk.to — loaded for VISITOR MONITORING ONLY.
+ * Tawk.to live chat and visitor monitoring.
  *
- * The chat bubble is deliberately hidden: this site already has its own AI chat
- * widget (components/ChatWidget.tsx) in the same bottom-right corner, and two
- * launchers there is a mess. What we want from Tawk is the live visitor list —
- * who is on the site right now, their country/city, which page they're reading —
- * plus new-visitor push notifications in the Tawk dashboard and mobile apps.
+ * This is the site's chat widget: the launcher is visible so visitors can start
+ * a conversation, which you answer from the Tawk dashboard or mobile app. Tawk
+ * also gives the live visitor list - who is on the site now, their country and
+ * city, which page they are reading - plus new-visitor notifications.
  *
  * The embed id below is public by design - it ships in the page source of every
- * site running Tawk - so it lives in the code like the GA4 and Apollo ids above.
+ * site running Tawk - so it lives in the code like the GA4 and Apollo ids.
  * NEXT_PUBLIC_TAWK_SRC overrides it if you ever need a different property.
- *
- * To show the chat bubble later: delete the hideWidget() call below and the
- * `iframe[title="chat widget"]` rule in globals.css.
  */
 
 const TAWK_DEFAULT_SRC = 'https://embed.tawk.to/6ac6983bea955334bb041fc7/1k4bs5abp';
@@ -31,17 +27,6 @@ export default function TawkMonitor() {
     const w = window as any;
     w.Tawk_API = w.Tawk_API || {};
     w.Tawk_LoadStart = new Date();
-
-    // Suppress the launcher as soon as the widget is ready.
-    const prevOnLoad = w.Tawk_API.onLoad;
-    w.Tawk_API.onLoad = function () {
-      try {
-        if (typeof prevOnLoad === 'function') prevOnLoad();
-        if (typeof w.Tawk_API.hideWidget === 'function') w.Tawk_API.hideWidget();
-      } catch {
-        /* monitoring is best-effort; never break the page */
-      }
-    };
 
     const s = document.createElement('script');
     s.id = SCRIPT_ID;
