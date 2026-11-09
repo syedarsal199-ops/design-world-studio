@@ -27,6 +27,7 @@ const NAMES: Record<string, string> = {
   'work-youdj-mixer': 'YouDJ Mixer',
   'work-unbroken-investing': 'Unbroken Investing',
   'blog-proptech-solutions-2026': 'PropTech Solutions',
+  'blog-ai-virtual-staging-real-estate-2026': 'AI Virtual Staging for Real Estate',
   'blog-ai-property-management-software-2026': 'AI Property Management Software',
   'blog-ai-agents-real-estate': 'AI Agents for Real Estate',
   'blog-ai-voice-agents-real-estate': 'AI Voice Agents for Real Estate',
