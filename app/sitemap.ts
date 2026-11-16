@@ -24,6 +24,7 @@ const CONTENT_PAGES = [
   'blog-real-estate-crm-comparison-2026',
   'blog-ai-agents-real-estate',
   'blog-ai-voice-agents-real-estate',
+  'blog-ai-showing-scheduling-software-real-estate-2026',
   'blog-ai-transaction-coordination-real-estate',
   'blog-ai-lead-scoring-real-estate',
   'blog-ai-marketing-automation-real-estate',

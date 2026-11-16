@@ -39,7 +39,7 @@ export const HTML = `
 @media(prefers-reduced-motion:reduce){.blog-catpill{transition:none;}.blog-catpill:hover{transform:none;}}
 </style>
 <section class="bg-alt"><div class="container">
-<nav class="blog-catnav" aria-label="Blog categories"><div class="blog-catnav-inner"><a class="blog-catpill" href="#real-estate-crm">Real Estate CRM<span class="cnt">2</span></a><a class="blog-catpill" href="#proptech">PropTech<span class="cnt">10</span></a><a class="blog-catpill" href="#website-development">Website Development<span class="cnt">5</span></a><a class="blog-catpill" href="#mobile-app-development">Mobile Apps<span class="cnt">4</span></a><a class="blog-catpill" href="#ai-development">AI &amp; Software<span class="cnt">3</span></a></div></nav>
+<nav class="blog-catnav" aria-label="Blog categories"><div class="blog-catnav-inner"><a class="blog-catpill" href="#real-estate-crm">Real Estate CRM<span class="cnt">2</span></a><a class="blog-catpill" href="#proptech">PropTech<span class="cnt">11</span></a><a class="blog-catpill" href="#website-development">Website Development<span class="cnt">5</span></a><a class="blog-catpill" href="#mobile-app-development">Mobile Apps<span class="cnt">4</span></a><a class="blog-catpill" href="#ai-development">AI &amp; Software<span class="cnt">3</span></a></div></nav>
 <div class="blog-section" id="real-estate-crm">
 <div class="blog-sec-head"><h2>Real Estate CRM Development</h2><span class="blog-sec-rule"></span></div>
 <p class="blog-sec-blurb">Build, buy or integrate — and what a CRM has to do before agents will actually use it.</p>
@@ -66,6 +66,13 @@ export const HTML = `
 <div class="blog-sec-head"><h2>PropTech &amp; Real Estate Software</h2><span class="blog-sec-rule"></span></div>
 <p class="blog-sec-blurb">AI agents, response times and the software stack brokerages are actually buying in 2026.</p>
 <div class="blog-grid">
+
+      <a class="blog-card reveal" href="/blog-ai-showing-scheduling-software-real-estate-2026">
+        <div class="blog-meta"><span class="blog-tag">Showing Scheduling</span><span class="blog-date">November 2026 &middot; 11 min read</span></div>
+        <h3>ShowingTime+ vs. Showami vs. an AI Scheduling Agent: Which Actually Saves You Time in 2026?</h3>
+        <p>ShowingTime+&rsquo;s Appointment Center jumped 67% to $25/month in November 2026. Real pricing for ShowingTime+, Showami, and an AI scheduling agent approach, and which one fits your team.</p>
+        <span class="blog-read">Read article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+      </a>
 
       <a class="blog-card reveal" href="/blog-ai-virtual-staging-real-estate-2026">
         <div class="blog-meta"><span class="blog-tag">AI Virtual Staging</span><span class="blog-date">November 2026 &middot; 11 min read</span></div>
