@@ -31,6 +31,7 @@ const NAMES: Record<string, string> = {
   'blog-ai-property-management-software-2026': 'AI Property Management Software',
   'blog-ai-agents-real-estate': 'AI Agents for Real Estate',
   'blog-ai-voice-agents-real-estate': 'AI Voice Agents for Real Estate',
+  'blog-ai-chatbots-vs-voice-agents-real-estate': 'AI Chatbots vs. Voice Agents',
   'blog-ai-showing-scheduling-software-real-estate-2026': 'AI Showing Scheduling Software',
   'blog-ai-transaction-coordination-real-estate': 'AI Transaction Coordination',
   'blog-ai-lead-scoring-real-estate': 'AI Lead Scoring for Real Estate',
